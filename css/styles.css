@@ -312,15 +312,19 @@ a {
   #mag-glass {
     display: block;
     color: #757575;
-    margin-right: 0.8rem;
+    margin-right: 1.2rem;
   }
 
   #search-input {
     border: none;
     width: 100%;
     font-size: 1.1rem;
-    padding: 0.2rem 0 0.2rem 0.4rem;
+    padding: 0;
     background-color: #fff;
+  }
+
+  #search-input:focus {
+    outline: none;
   }
 
   #voice-dictation {
