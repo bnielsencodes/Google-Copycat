@@ -152,6 +152,10 @@ a {
   border-radius: 25px;
 }
 
+.vote-link {
+  margin: 0;
+}
+
 #palette-icon {
   background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
   background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
@@ -173,6 +177,11 @@ a {
   height: 24px;
   font-size: 0.75rem;
 }
+
+#vote-button:hover {
+  cursor: pointer;
+}
+
 
 
 /* ------------ FOOTER SECTION ------------ */
@@ -303,14 +312,14 @@ a {
   #mag-glass {
     display: block;
     color: #757575;
-    margin-right: 1.2rem;
+    margin-right: 0.8rem;
   }
 
   #search-input {
     border: none;
     width: 100%;
     font-size: 1.1rem;
-    padding: 0;
+    padding: 0.2rem 0 0.2rem 0.4rem;
     background-color: #fff;
   }
 
