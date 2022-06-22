@@ -1,12 +1,12 @@
 const search = document.getElementById("search-input");
-const notification = document.getElementById("notifications");
-const dropdown = document.querySelector(".notifications-dropdown");
-const searchbar = document.querySelector(".search-bar");
+const dropdownHide = document.getElementById("dropdown-hide");
+const dropdown = document.querySelector(".dropdown");
+const searchBar = document.querySelector(".search-bar");
 
 search.addEventListener("click", () => {
   dropdown.classList.toggle("show");
-  searchbar.classList.toggle("searchbar-border-radius");
-  notification.classList.toggle("hidden");
+  searchBar.classList.toggle("search-border-radius");
+  dropdownHide.classList.toggle("hidden");
   search.classList.toggle("search-padding-top");
 });
 

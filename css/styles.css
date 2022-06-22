@@ -88,7 +88,7 @@ a {
   font-size: 0.8rem;
 }
 
-.notifications-dropdown {
+.dropdown {
   display: none;
   height: auto;
   width: 560px;
@@ -115,7 +115,7 @@ a {
   padding-top: 0.33rem;
 }
 
-.searchbar-border-radius {
+.search-border-radius {
   border-radius: 10px 10px 0 0;
 }
 
@@ -131,15 +131,15 @@ a {
   padding-left: 16px;
 }
 
-.notification-list-items {
+.dropdown-list-items {
   padding-left: 21px;
 }
 
-.notification-list-items:hover {
+.dropdown-list-items:hover {
   background-color: #efefef;
 }
 
-.notification-list-items:not(:first-child) {
+.dropdown-list-items:not(:first-child) {
   margin-top: 0.5rem;
 }
 
