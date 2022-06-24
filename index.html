@@ -1,281 +1,347 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- ------------ META TAGS ------------ -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ------------ MAIN STYLESHEET ------------ -->
-    <link rel="stylesheet" href="css/styles.css" />
+<head>
+  <!-- ------------ META TAGS ------------ -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ------------ NORMALIZE CSS ------------ -->
-    <link rel="stylesheet" href="css/normalize.css" />
+  <!-- ------------ MAIN STYLESHEET ------------ -->
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- ------------ GOOGLE FONT ------------ -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
-      rel="stylesheet"
-    />
+  <!-- ------------ NORMALIZE CSS ------------ -->
+  <link rel="stylesheet" href="css/normalize.css" />
 
-    <title>Google Dark Mode Copy</title>
-  </head>
+  <!-- ------------ GOOGLE FONT ------------ -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
 
-  <body>
-    <!-- ------------ NAV ------------ -->
-    <header>
-      <nav id="nav">
-        <a class="nav-text hide-mobile" href="https://mail.google.com/"
-          >Gmail</a
-        >
+  <title>Google Dark Mode Copy</title>
+</head>
 
-        <a
-          class="nav-text hide-mobile"
-          href="https://www.google.com/imghp?hl=en&tab=ri&ogbl"
-          >Images</a
-        >
+<body>
+  <!-- ------------ NAV ------------ -->
+  <header>
+    <nav id="nav">
+      <a class="nav-text hide-mobile" href="https://mail.google.com/">Gmail</a>
 
-        <a id="dot-grid" class="hvr-glow hvr-fade hide-mobile" href="#"
-          ><i class="center-icons fas fa-th"></i
-        ></a>
+      <a class="nav-text hide-mobile" href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a>
 
-        <a id="profile-pic" class="hvr-glow hvr-fade" href="#"
-          ><i class="center-icons fas fa-user-circle fa-2x"></i
-        ></a>
-      </nav>
-    </header>
+      <a id="dot-grid" class="hvr-glow hvr-fade hide-mobile" href="#"><i class="center-icons fas fa-th"></i></a>
 
-    <!-- ------------ GOOGLE HEADING ------------ -->
-    <div id="google-section">
-      <h1 class="google-heading">Google</h1>
+      <a id="profile-pic" class="hvr-glow hvr-fade" href="#"><i class="center-icons fas fa-user-circle fa-2x"></i></a>
+    </nav>
+  </header>
+
+  <!-- ------------ GOOGLE HEADING ------------ -->
+  <div id="google-section">
+    <h1 class="google-heading">Google</h1>
+  </div>
+
+  <!-- ------------ SEARCH BAR ------------ -->
+  <div class="search-bar">
+    <div id="search-contents">
+      <i id="mag-glass" class="fas fa-search"></i>
+      <input id="search-input-sm" class="hide-lg-screen" type="search" placeholder="Search or type URL"
+        spellcheck="false" autocomplete="off" />
+      <input id="search-input" class="hide-mobile" type="search" placeholder="Search Google or type a URL"
+        spellcheck="false" autocomplete="off" />
+      <button id="voice-dictation" type="button">
+        <i class="fas fa-microphone fa-lg"></i>
+      </button>
+      <div id="dropdown-hide"></div>
+      <ul class="dropdown">
+        <li class="dropdown-list-items">
+          <a
+            href="https://www.google.com/search?q=Juneteenth&rlz=1C5CHFA_enUS750US750&oq=juneteenth&aqs=chrome.0.69i59j0i131i433i512j0i67i131i433j0i131i433i512l3j0i67i131i433j0i131i433i512j0i131i433j0i131i433i512.2523j1j7&sourceid=chrome&ie=UTF-8">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              juneteenth
+              <span class="search-span">- Google Search</span>
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+        <li class="dropdown-list-items">
+          <a href="what date is earth day 2021">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              what date is earth day 2023
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+        <li class="dropdown-list-items">
+          <a
+            href="https://www.google.com/search?q=google+fonts&rlz=1C5CHFA_enUS750US750&oq=google+fonts&aqs=chrome.0.69i59j0i433i512l2j0i131i433i512j69i60l2j69i65j69i60.2042j0j9&sourceid=chrome&ie=UTF-8">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              google fonts
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+        <li class="dropdown-list-items">
+          <a
+            href="https://www.google.com/search?q=animate+css&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaI57yvnHk1FGTAzXF1lOpnV8cm6g%3A1655873407176&ei=f5-yYqioCrXHkPIPsqudiA0&ved=0ahUKEwjo4-iRocD4AhW1I0QIHbJVB9EQ4dUDCA4&uact=5&oq=animate+css&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOg0ILhDHARDRAxCwAxBDOgoIABDkAhCwAxgBOgQIIxAnOg0IABCABBCHAhCxAxAUOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CgguEMcBENEDEEM6EAguELEDEIMBEMcBENEDEEM6BAgAEEM6BwgjEOoCECc6CwguEIAEEMcBEKMCOgcIABCxAxBDOgcILhCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAVDxBFj_H2C0IWgDcAF4AIABaogB2gmSAQQxNi4xmAEAoAEBsAEKyAERwAEB2gEGCAEQARgJ&sclient=gws-wiz">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              animate css
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+        <li class="dropdown-list-items">
+          <a
+            href="https://www.google.com/search?q=font+awesome&rlz=1C5CHFA_enUS750US750&oq=font+awesome&aqs=chrome..69i57j69i59j35i39j0i131i433i512j69i60l3j69i65.2518j0j9&sourceid=chrome&ie=UTF-8">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              font awesome
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+        <li class="dropdown-list-items">
+          <a
+            href="https://www.google.com/search?q=population+of+tokyo&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsYr2RZQS0K0HPc0mpBFv8VhrApWNg%3A1655873459999&ei=s5-yYuDAPKCdkPIPiPqImA4&ved=0ahUKEwig5oCrocD4AhWgDkQIHQg9AuMQ4dUDCA4&uact=5&oq=population+of+tokyo&gs_lcp=Cgdnd3Mtd2l6EAMyDQgAEIAEELEDEEYQ-wEyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CwgAEIAEELEDEIMBOgsILhCABBDHARDRAzoLCC4QgAQQxwEQowI6BAgAEEM6DgguEIAEELEDEMcBEKMCOggIABCABBCxAzoLCC4QgAQQxwEQrwE6CwguEIAEELEDEIMBOgoIABCABBCHAhAUOg0IABCABBCHAhCxAxAUSgQIQRgASgQIRhgAUABYvBxg2CVoAHABeACAAXeIAfoKkgEEMTguMZgBAKABAcABAQ&sclient=gws-wiz">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              population of tokyo
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+        <li class="dropdown-list-items">
+          <a
+            href="https://www.google.com/search?q=css+tricks+grid&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaVH7bgavM5YzNcByxsnNe9f1G6Kw%3A1655873481486&ei=yZ-yYsaqHfaC0PEPteqTuAI&ved=0ahUKEwiGs6C1ocD4AhV2ATQIHTX1BCcQ4dUDCA4&uact=5&oq=css+tricks+grid&gs_lcp=Cgdnd3Mtd2l6EAMyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCGAzIFCAAQhgMyBQgAEIYDOgQIIxAnOgQIABBDOhEILhCABBCxAxCDARDHARCjAjoECC4QQzoKCAAQgAQQhwIQFDoHCC4Q1AIQQzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEEMcBEK8BOgcIABCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAFAAWKYTYPYVaABwAXgAgAFxiAHwCJIBBDEzLjKYAQCgAQHAAQE&sclient=gws-wiz">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              css tricks grid
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+        <li class="dropdown-list-items">
+          <a
+            href="https://www.google.com/search?q=chart.js&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsb5IaTbIlcSqU53V7JCIH_ZGZtXQw%3A1655873526557&ei=9p-yYsXSIdfQkPIPgua2sAE&ved=0ahUKEwjFpd_KocD4AhVXKEQIHQKzDRYQ4dUDCA4&uact=5&oq=chart.js&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEEM6EQguEIAEELEDEIMBEMcBENEDOggILhCxAxCDAToFCAAQkQI6EQguEIAEELEDEIMBEMcBEKMCOgoILhCABBCHAhAUOgsIABCABBCxAxCDAToFCC4QgAQ6CggAELEDEIMBEEM6FAguEIAEELEDEIMBEMcBEKMCENQCOgsILhCABBCxAxDUAjoICAAQgAQQsQNKBAhBGABKBAhGGABQAFjkDmDdEWgAcAF4AIABcIgBkgWSAQM2LjKYAQCgAQHAAQE&sclient=gws-wiz">
+            <p class="dropdown-text">
+              <i class="fas fa-regular fa-clock"></i>
+              chart.js
+            </p>
+            <div class="search-x"></div>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <!-- ------------ SEARCH BAR ------------ -->
-    <div class="search-bar">
-      <div id="search-contents">
-        <i id="mag-glass" class="fas fa-search"></i>
-        <input
-          id="search-input-sm"
-          class="hide-lg-screen"
-          type="search"
-          placeholder="Search or type URL"
-          spellcheck="false"
-          autocomplete="off"
-        />
-        <input
-          id="search-input"
-          class="hide-mobile"
-          type="search"
-          placeholder="Search Google or type a URL"
-          spellcheck="false"
-          autocomplete="off"
-        />
-        <button id="voice-dictation" type="button">
-          <i class="fas fa-microphone fa-lg"></i>
-        </button>
-        <div id="dropdown-hide"></div>
-        <ul class="dropdown">
-          <li class="dropdown-list-items">
-            <a
-              href="https://www.google.com/search?q=Juneteenth&rlz=1C5CHFA_enUS750US750&oq=juneteenth&aqs=chrome.0.69i59j0i131i433i512j0i67i131i433j0i131i433i512l3j0i67i131i433j0i131i433i512j0i131i433j0i131i433i512.2523j1j7&sourceid=chrome&ie=UTF-8"
-            >
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                juneteenth
-                <span class="search-span">- Google Search</span>
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-          <li class="dropdown-list-items">
-            <a href="what date is earth day 2021">
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                what date is earth day 2023
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-          <li class="dropdown-list-items">
-            <a
-              href="https://www.google.com/search?q=google+fonts&rlz=1C5CHFA_enUS750US750&oq=google+fonts&aqs=chrome.0.69i59j0i433i512l2j0i131i433i512j69i60l2j69i65j69i60.2042j0j9&sourceid=chrome&ie=UTF-8"
-            >
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                google fonts
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-          <li class="dropdown-list-items">
-            <a
-              href="https://www.google.com/search?q=animate+css&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaI57yvnHk1FGTAzXF1lOpnV8cm6g%3A1655873407176&ei=f5-yYqioCrXHkPIPsqudiA0&ved=0ahUKEwjo4-iRocD4AhW1I0QIHbJVB9EQ4dUDCA4&uact=5&oq=animate+css&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOg0ILhDHARDRAxCwAxBDOgoIABDkAhCwAxgBOgQIIxAnOg0IABCABBCHAhCxAxAUOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CgguEMcBENEDEEM6EAguELEDEIMBEMcBENEDEEM6BAgAEEM6BwgjEOoCECc6CwguEIAEEMcBEKMCOgcIABCxAxBDOgcILhCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAVDxBFj_H2C0IWgDcAF4AIABaogB2gmSAQQxNi4xmAEAoAEBsAEKyAERwAEB2gEGCAEQARgJ&sclient=gws-wiz"
-            >
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                animate css
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-          <li class="dropdown-list-items">
-            <a
-              href="https://www.google.com/search?q=font+awesome&rlz=1C5CHFA_enUS750US750&oq=font+awesome&aqs=chrome..69i57j69i59j35i39j0i131i433i512j69i60l3j69i65.2518j0j9&sourceid=chrome&ie=UTF-8"
-            >
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                font awesome
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-          <li class="dropdown-list-items">
-            <a
-              href="https://www.google.com/search?q=population+of+tokyo&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsYr2RZQS0K0HPc0mpBFv8VhrApWNg%3A1655873459999&ei=s5-yYuDAPKCdkPIPiPqImA4&ved=0ahUKEwig5oCrocD4AhWgDkQIHQg9AuMQ4dUDCA4&uact=5&oq=population+of+tokyo&gs_lcp=Cgdnd3Mtd2l6EAMyDQgAEIAEELEDEEYQ-wEyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CwgAEIAEELEDEIMBOgsILhCABBDHARDRAzoLCC4QgAQQxwEQowI6BAgAEEM6DgguEIAEELEDEMcBEKMCOggIABCABBCxAzoLCC4QgAQQxwEQrwE6CwguEIAEELEDEIMBOgoIABCABBCHAhAUOg0IABCABBCHAhCxAxAUSgQIQRgASgQIRhgAUABYvBxg2CVoAHABeACAAXeIAfoKkgEEMTguMZgBAKABAcABAQ&sclient=gws-wiz"
-            >
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                population of tokyo
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-          <li class="dropdown-list-items">
-            <a
-              href="https://www.google.com/search?q=css+tricks+grid&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaVH7bgavM5YzNcByxsnNe9f1G6Kw%3A1655873481486&ei=yZ-yYsaqHfaC0PEPteqTuAI&ved=0ahUKEwiGs6C1ocD4AhV2ATQIHTX1BCcQ4dUDCA4&uact=5&oq=css+tricks+grid&gs_lcp=Cgdnd3Mtd2l6EAMyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCGAzIFCAAQhgMyBQgAEIYDOgQIIxAnOgQIABBDOhEILhCABBCxAxCDARDHARCjAjoECC4QQzoKCAAQgAQQhwIQFDoHCC4Q1AIQQzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEEMcBEK8BOgcIABCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAFAAWKYTYPYVaABwAXgAgAFxiAHwCJIBBDEzLjKYAQCgAQHAAQE&sclient=gws-wiz"
-            >
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                css tricks grid
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-          <li class="dropdown-list-items">
-            <a
-              href="https://www.google.com/search?q=chart.js&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsb5IaTbIlcSqU53V7JCIH_ZGZtXQw%3A1655873526557&ei=9p-yYsXSIdfQkPIPgua2sAE&ved=0ahUKEwjFpd_KocD4AhVXKEQIHQKzDRYQ4dUDCA4&uact=5&oq=chart.js&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEEM6EQguEIAEELEDEIMBEMcBENEDOggILhCxAxCDAToFCAAQkQI6EQguEIAEELEDEIMBEMcBEKMCOgoILhCABBCHAhAUOgsIABCABBCxAxCDAToFCC4QgAQ6CggAELEDEIMBEEM6FAguEIAEELEDEIMBEMcBEKMCENQCOgsILhCABBCxAxDUAjoICAAQgAQQsQNKBAhBGABKBAhGGABQAFjkDmDdEWgAcAF4AIABcIgBkgWSAQM2LjKYAQCgAQHAAQE&sclient=gws-wiz"
-            >
-              <p class="dropdown-text">
-                <i class="fas fa-regular fa-clock"></i>
-                chart.js
-              </p>
-              <div class="search-x"></div>
-            </a>
-          </li>
-        </ul>
+  <!-- ------------ TOP WEBSITES ------------ -->
+  <div id="top-websites">
+    <a class="top-site hvr-fade" title="CodePen" href="https://codepen.io">
+      <div class="top-site-icon-bg">
+        <div class="top-site-icon">
+          <i class="fab fa-codepen fa-2x"></i>
+        </div>
       </div>
-    </div>
-
-    <!-- ------------ TOP WEBSITES ------------ -->
-    <div id="top-websites">
-      <a class="top-site hvr-fade" title="CodePen" href="https://codepen.io">
-        <div class="top-site-icon-bg">
-          <div class="top-site-icon">
-            <i class="fab fa-codepen fa-2x"></i>
-          </div>
-        </div>
-        <div class="top-site-title">
-          <p>CodePen</p>
-        </div>
-      </a>
-
-      <a class="top-site hvr-fade" title="GitHub" href="https://GitHub.com">
-        <div class="top-site-icon-bg">
-          <div class="top-site-icon">
-            <i class="fab fa-github-square fa-2x"></i>
-          </div>
-        </div>
-        <div class="top-site-title">
-          <p>GitHub</p>
-        </div>
-      </a>
-
-      <a class="top-site hvr-fade" title="Twitter" href="https://Twitter.com">
-        <div class="top-site-icon-bg">
-          <div class="top-site-icon">
-            <i class="fab fa-twitter-square fa-2x"></i>
-          </div>
-        </div>
-        <div class="top-site-title">
-          <p>Twitter</p>
-        </div>
-      </a>
-
-      <a class="top-site hvr-fade" title="YouTube" href="https://YouTube.com">
-        <div class="top-site-icon-bg">
-          <div class="top-site-icon">
-            <i class="fab fa-youtube fa-2x"></i>
-          </div>
-        </div>
-        <div class="top-site-title">
-          <p>YouTube</p>
-        </div>
-      </a>
-
-      <a
-        class="top-site hvr-fade"
-        title="Stack Overflow"
-        href="https://StackOverflow.com"
-      >
-        <div class="top-site-icon-bg">
-          <div class="top-site-icon">
-            <i class="fab fa-stack-overflow fa-2x"></i>
-          </div>
-        </div>
-        <div class="top-site-title">
-          <p>Stack Overflow</p>
-        </div>
-      </a>
-
-      <a class="top-site hvr-fade" title="Add Shortcut" href="#">
-        <div class="top-site-icon-bg">
-          <div class="top-site-icon plus-icon">
-            <i class="fas fa-solid fa-plus"></i>
-          </div>
-        </div>
-        <div class="top-site-title">
-          <p>Add shortcut</p>
-        </div>
-      </a>
-    </div>
-
-    <!-- ------------ VOTE SECTION ------------ -->
-    <div id="vote-section">
-      <div id="palette-icon">
-        <i class="fas fa-palette"></i>
+      <div class="top-site-title">
+        <p>CodePen</p>
       </div>
-      <div id="vote-button-container">
-        <a href="https://www.google.com/doodles" class="vote-link">
-          <button id="vote-button" type="button">
-            Vote for your favorite Doodle for Google
-          </button>
-        </a>
-      </div>
-    </div>
+    </a>
 
-    <!-- ------------ FOOTER SECTION ------------ -->
-    <footer class="hide-custom">
-      <a id="customize-section">
-        <button id="customize-button" type="button">
-          <div id="customize-icon">
-            <i class="fas fa-pencil-alt"></i>
-          </div>
-          <div id="customize-text">
-            <p>Customize Chrome</p>
-          </div>
+    <a class="top-site hvr-fade" title="GitHub" href="https://GitHub.com">
+      <div class="top-site-icon-bg">
+        <div class="top-site-icon">
+          <i class="fab fa-github-square fa-2x"></i>
+        </div>
+      </div>
+      <div class="top-site-title">
+        <p>GitHub</p>
+      </div>
+    </a>
+
+    <a class="top-site hvr-fade" title="Twitter" href="https://Twitter.com">
+      <div class="top-site-icon-bg">
+        <div class="top-site-icon">
+          <i class="fab fa-twitter-square fa-2x"></i>
+        </div>
+      </div>
+      <div class="top-site-title">
+        <p>Twitter</p>
+      </div>
+    </a>
+
+    <a class="top-site hvr-fade" title="YouTube" href="https://YouTube.com">
+      <div class="top-site-icon-bg">
+        <div class="top-site-icon">
+          <i class="fab fa-youtube fa-2x"></i>
+        </div>
+      </div>
+      <div class="top-site-title">
+        <p>YouTube</p>
+      </div>
+    </a>
+
+    <a class="top-site hvr-fade" title="Stack Overflow" href="https://StackOverflow.com">
+      <div class="top-site-icon-bg">
+        <div class="top-site-icon">
+          <i class="fab fa-stack-overflow fa-2x"></i>
+        </div>
+      </div>
+      <div class="top-site-title">
+        <p>Stack Overflow</p>
+      </div>
+    </a>
+
+    <a class="top-site hvr-fade" title="Add Shortcut" href="#">
+      <div class="top-site-icon-bg">
+        <div class="top-site-icon plus-icon">
+          <i class="fas fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="top-site-title">
+        <p>Add shortcut</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- ------------ VOTE SECTION ------------ -->
+  <div id="vote-section">
+    <div id="palette-icon">
+      <i class="fas fa-palette"></i>
+    </div>
+    <div id="vote-button-container">
+      <a href="https://www.google.com/doodles" class="vote-link">
+        <button id="vote-button" type="button">
+          Vote for your favorite Doodle for Google
         </button>
       </a>
-    </footer>
+    </div>
+  </div>
 
-    <!-- ------------ FONT AWESOME ------------ -->
-    <script
-      src="https://kit.fontawesome.com/e10edea624.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- ------------ FOOTER SECTION ------------ -->
 
-    <!-- ------------ FONT AWESOME ------------ -->
-    <script src="js/app.js"></script>
-  </body>
+
+  <footer class="hide-custom">
+    <a id="customize-section">
+      <button id="customize-button" type="button">
+        <div id="customize-icon">
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+        <div id="customize-text">
+          <p>Customize Chrome</p>
+        </div>
+      </button>
+    </a>
+  </footer>
+
+
+  <!-- ------------ MODAL AND OVERLAY ------------ -->
+  <div class="overlay hidden-modal">
+    <div class="modal">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="modal-header-p">Customize this page</p>
+        </div>
+
+
+        <div class="modal-center-container">
+          <div class="modal-categories">
+            <ul class="modal-list">
+              <li class="modal-list-item">
+                <a class="modal-list-link" href="#">
+                  <div class="modal-icon-container">
+                    <i class="fas fa-solid fa-image"></i>
+                  </div>
+                  <p id="modal-list-p-one" class="modal-list-p">Background</p>
+                </a>
+              </li>
+              <li class="modal-list-item">
+                <a class="modal-list-link" href="#">
+                  <div class="modal-icon-container">
+                    <i class="fas fa-solid fa-link"></i>
+                  </div>
+                  <p class="modal-list-p">Shortcuts</p>
+                </a>
+              </li>
+              <li class="modal-list-item">
+                <a class="modal-list-link" href="#">
+                  <div class="modal-icon-container">
+                    <i class="fas fa-solid fa-server"></i>
+                  </div>
+                  <p class="modal-list-p">Cards</p>
+                </a>
+              </li>
+              <li class="modal-list-item">
+                <a class="modal-list-link" href="#">
+                  <div class="modal-icon-container">
+                    <i class="fas fa-solid fa-palette"></i>
+                  </div>
+                  <p class="modal-list-p">Color and theme</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="modal-grid">
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">Classic Chrome</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">LGBTQ Collection</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">Landscapes</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">Art</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">Geometric Shapes</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">Solid Colors</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">Seascapes</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="#" alt="#">
+              <p class="modal-grid-p">Textures</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-buttons-container">
+          <button class="modal-cancel modal-buttons">Cancel</button>
+          <button class="modal-done modal-buttons">Done</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- ------------ FONT AWESOME ------------ -->
+  <script src="https://kit.fontawesome.com/e10edea624.js" crossorigin="anonymous"></script>
+
+  <!-- ------------ JAVASCRIPT MAIN ------------ -->
+  <script src="js/app.js"></script>
+</body>
+
 </html>
