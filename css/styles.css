@@ -608,6 +608,166 @@ a {
     color: #8BB4F7;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .modal-shortcuts-container {
+    display: flex;
+    flex-direction: column;
+    width: 582px;
+    height: 372px;
+    padding: 10px 0 0 14px;
+  }
+
+  .modal-shortcuts-top {
+    display: flex;
+    justify-content: space-between;
+    width: 542px;
+  }
+
+  .my-shortcuts-container,
+  .most-visited-sites-container {
+    width: 266px;
+  }
+
+  .mini-google-container {
+    width: 266px;
+    height: 174px;
+    border: 1px solid #5F6367;
+    border-radius: 4px;
+  }
+
+  .user-icon-container,
+  .earth-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+  }
+
+  .user-icon-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #5F6367;
+    border: 8px solid #5F6367;
+    border-radius: 50%;
+  }
+
+  .fa-user {
+    position: relative;
+    font-size: 3rem;
+    color: #28292C;
+  }
+
+  .bottom-text h4,
+  .hide-text-container h4,
+  .bottom-text p,
+  .hide-text-container p {
+    font-size: 0.8rem;
+    letter-spacing: .005px;
+  }
+
+  .bottom-text h4,
+  .hide-text-container h4 {
+    color: #fff;
+  }
+
+  .bottom-text p,
+  .hide-text-container p {
+    color: #9AA0A6;
+  }
+
+  .bottom-text {
+    padding-left: 2px;
+  }
+
+  .bottom-text h4 {
+    margin-bottom: 7.5px;
+  }
+
+  .bottom-text p {
+    margin-top: 7.5px;
+  }
+
+  .hide-toggle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 542px;
+    border: 1px solid #5F6367;
+    border-radius: 4px;
+  }
+
+  .slashed-eye-icon-container {
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    margin: 0 20px 0 24px;
+  }
+
+  .fa-eye-slash {
+    color: #9AA0A6;
+  }
+
+  .hide-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 388px;
+    height: 62px;
+  }
+
+  .hide-text-container h4,
+  .hide-text-container p {
+    margin: 0;
+  }
+
+  .hide-toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 16px;
+    margin: 0 20px 0 0;
+  }
+
+  #hide-toggle-switch {
+    width: 28px;
+    height: 12px;
+  }
+
+  #hide-toggle-switch-span {
+    background-color: #9AA0A6;
+    width: 28px;
+    height: 12px;
+  }
+
+  #hide-toggle-switch-knob {
+    width: 16px;
+    height: 16px;
+  }
+
   #modal-grid {
     display: grid;
     grid-template-columns: repeat(3, 178px);

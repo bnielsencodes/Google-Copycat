@@ -14,6 +14,9 @@
   <!-- ------------ NORMALIZE CSS ------------ -->
   <link rel="stylesheet" href="css/normalize.css" />
 
+  <!-- ------------ CSS TOGGLE SWITCH ---------- -->
+  <link rel="stylesheet" href="css/toggle-switch.css" />
+
   <!-- ------------ GOOGLE FONT ------------ -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
@@ -290,7 +293,7 @@
           </div>
 
 
-          <div id="modal-grid">
+          <!-- <div id="modal-grid">
             <a href="#" class="modal-grid-item-one-link">
               <div class="modal-grid-item modal-grid-item-one">
                 <div class="upload-from-device">
@@ -354,6 +357,83 @@
             <div class="modal-grid-item">
               <img class="modal-img" src="imgs/peter-gargiulo-cGNCepznaV8-unsplash.jpg" alt="black textured background">
               <p class="modal-grid-p">Textures</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="imgs/nasa-Q1p7bh3SHj8-unsplash.jpg"
+                alt="view of earth at night with lights on surface">
+              <p class="modal-grid-p">Earth</p>
+            </div>
+            <div class="modal-grid-item">
+              <img class="modal-img" src="imgs/james-lee-YIy1cd3xN4w-unsplash.jpg" alt="black textured background">
+              <p class="modal-grid-p">Solid Colors</p>
+            </div>
+          </div> -->
+
+
+          <div class="modal-shortcuts-container">
+            <div class="modal-shortcuts-top">
+              <div class="my-shortcuts-container">
+                <!-- my shortcuts -->
+                <div class="mini-google-container">
+                  <div class="user-icon-container">
+                    <div class="user-icon-border">
+                      <!-- avatar icon -->
+                      <i class="fas fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <!-- mini google site -->
+                  </div>
+                  <div class="checked-icon-container">
+                    <!-- checked icon -->
+                  </div>
+                </div>
+                <div class="bottom-text">
+                  <h4>My shortcuts</h4>
+                  <p>Shortcuts are curated by you</p>
+                </div>
+              </div>
+              <div class="most-visited-sites-container">
+                <!-- most visited sites -->
+                <div class="mini-google-container">
+                  <div class="earth-svg-container">
+                    <!-- earth icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24.75 24.75">
+                      <path
+                        d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM4 12h4.4c3.407.022 4.922 1.73 4.543 5.127H9.488v2.47a8.004 8.004 0 0010.498-8.083C19.327 12.504 18.332 13 17 13c-2.137 0-3.206-.916-3.206-2.75h-3.748c-.274-2.728.683-4.092 2.87-4.092 0-.975.327-1.597.811-1.97A8.004 8.004 0 004 12z"
+                        fill="#5F6367" />
+                    </svg>
+                  </div>
+                  <div>
+                    <!-- mini google site -->
+                  </div>
+                </div>
+                <div class="bottom-text">
+                  <h4>Most visited sites</h4>
+                  <p>Shortcuts are suggested based on websites you visit often</p>
+                </div>
+              </div>
+            </div>
+            <div class="hide-toggle-section">
+              <!-- hide section -->
+              <div class="slashed-eye-icon-container">
+                <i class="fas fa-solid fa-eye-slash"></i>
+              </div>
+              <div class="hide-text-container">
+                <h4>Hide shortcuts</h4>
+                <p>Don't show shortcuts on this page</p>
+              </div>
+              <div class="hide-toggle-container">
+                <!-- toggle switch -->
+                <label id="hide-toggle-switch" class="switch-light switch-material" onclick="">
+                  <input type="checkbox">
+                  <span id="hide-toggle-switch-span">
+                    <span class="off"></span>
+                    <span class="on"></span>
+                    <a id="hide-toggle-switch-knob"></a>
+                  </span>
+                </label>
+              </div>
             </div>
           </div>
         </div>
