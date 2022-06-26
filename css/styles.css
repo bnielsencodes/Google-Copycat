@@ -43,7 +43,7 @@ a {
   letter-spacing: -2px;
 }
 
-.google-heading {
+#google-heading {
   margin: 0 0 8px 0;
 }
 
@@ -390,12 +390,12 @@ a {
   /* ------------ GOOGLE SECTION MEDIA ------------ */
 
   #google-section {
-    font-size: 3.5rem;
-    margin-top: 40px;
+    margin-top: 90px;
   }
 
-  .google-heading {
-    margin-bottom: 30px;
+  #google-heading {
+    font-size: 5.5rem;
+    margin-bottom: 20px;
   }
 
   /* ------------ SEARCH BAR SECTION MEDIA ------------ */
@@ -941,8 +941,8 @@ a {
   }
 
 
-  /* .hidden-modal {
-  display: none;
-} */
+  .hidden-modal {
+    display: none;
+  }
 
 }
