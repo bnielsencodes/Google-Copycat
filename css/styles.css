@@ -614,83 +614,94 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .modal-shortcuts-container {
-    display: flex;
-    flex-direction: column;
+  #module-cards-section {
     width: 582px;
     height: 372px;
-    padding: 10px 0 0 14px;
+    padding: 0 0 25px 14px;
+    font-size: 0.7525rem;
+    color: #fff;
   }
 
-  .modal-shortcuts-top {
-    display: flex;
-    justify-content: space-between;
-    width: 542px;
-  }
-
-  .my-shortcuts-container,
-  .most-visited-sites-container {
-    width: 266px;
-  }
-
-  .mini-google-container {
-    position: relative;
-    width: 266px;
-    height: 174px;
-    border: 1px solid #5F6367;
-    border-radius: 4px;
-  }
-
-  .user-svg-container,
-  .earth-svg-container {
-    position: absolute;
-    bottom: 30px;
-    left: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 96px;
-    height: 96px;
-  }
-
-  .shortcut-mini-google-page {
-    position: absolute;
-    right: 42px;
-    top: 15px;
+  .modal-cards-radios {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 135px;
+    margin: 14px 0 24px 0;
+  }
+
+  .modal-cards-radio-container {
+    display: flex;
     align-items: center;
-    width: 142px;
-    height: 142px;
-    background-color: #202124;
+  }
+
+  .modal-cards-radio-container:nth-child(2) {
+    margin-top: 1.9rem;
+  }
+
+  #modal-cards-radio-one,
+  #modal-cards-radio-two {
+    width: 16px;
+    height: 16px;
+  }
+
+  .cards-radio-label {
+    margin-left: 20px;
+  }
+
+  .modal-cards-toggles {
+    margin: 0.1px 51px 0 36px;
+  }
+
+  .cards-toggle-container {
+    display: flex;
+    align-items: center;
+    height: 3.25rem;
+  }
+
+  #cards-top-toggle-container {
     border: 1px solid #5F6367;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 5px 5px 0 0;
   }
 
-  .shortcut-mini-google-logo {
-    color: #DADCE0;
+  #cards-middle-toggle-container {
+    border-left: 1px solid #5F6367;
+    border-right: 1px solid #5F6367;
   }
 
-  .shortcut-search-hr {
-    background-color: #DADCE0;
+  #cards-bottom-toggle-container {
+    border-left: 1px solid #5F6367;
+    border-right: 1px solid #5F6367;
+    border-bottom: 1px solid #5F6367;
+    border-radius: 0 0 5px 5px;
   }
+
+  .card-toggle {
+    width: 34px;
+    height: 16px;
+    margin-right: 20px;
+  }
+
+  .cards-toggle-p {
+    width: 397px;
+    margin: 0 0 0 1.5rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .bottom-text h4,
   .hide-text-container h4,
@@ -932,6 +943,71 @@ a {
   .modal-grid-p {
     font-size: 0.8rem;
     color: #fff;
+  }
+
+  .modal-shortcuts-container {
+    display: flex;
+    flex-direction: column;
+    width: 582px;
+    height: 372px;
+    padding: 10px 0 0 14px;
+  }
+
+  .modal-shortcuts-top {
+    display: flex;
+    justify-content: space-between;
+    width: 542px;
+  }
+
+  .my-shortcuts-container,
+  .most-visited-sites-container {
+    width: 266px;
+  }
+
+  .mini-google-container {
+    position: relative;
+    width: 266px;
+    height: 174px;
+    border: 1px solid #5F6367;
+    border-radius: 4px;
+  }
+
+  .user-svg-container,
+  .earth-svg-container {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+  }
+
+  .shortcut-mini-google-page {
+    position: absolute;
+    right: 42px;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 142px;
+    background-color: #202124;
+    border: 1px solid #5F6367;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .shortcut-mini-google-logo {
+    color: #DADCE0;
+  }
+
+  .shortcut-search-hr {
+    background-color: #DADCE0;
   }
 
   .modal-buttons-container {
