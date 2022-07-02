@@ -647,14 +647,18 @@ a {
   }
 
   .mini-google-container {
+    position: relative;
     width: 266px;
     height: 174px;
     border: 1px solid #5F6367;
     border-radius: 4px;
   }
 
-  .user-icon-container,
+  .user-svg-container,
   .earth-svg-container {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -662,21 +666,30 @@ a {
     height: 96px;
   }
 
-  .user-icon-border {
+  .shortcut-mini-google-page {
+    position: absolute;
+    right: 42px;
+    top: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75px;
-    height: 75px;
-    background-color: #5F6367;
-    border: 8px solid #5F6367;
-    border-radius: 50%;
+    width: 142px;
+    height: 142px;
+    background-color: #202124;
+    border: 1px solid #5F6367;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.35);
   }
 
-  .fa-user {
-    position: relative;
-    font-size: 3rem;
-    color: #28292C;
+  .shortcut-mini-google-logo {
+    color: #DADCE0;
+  }
+
+  .shortcut-search-hr {
+    background-color: #DADCE0;
   }
 
   .bottom-text h4,
@@ -702,11 +715,11 @@ a {
   }
 
   .bottom-text h4 {
-    margin-bottom: 7.5px;
+    margin-bottom: 0.5px;
   }
 
   .bottom-text p {
-    margin-top: 7.5px;
+    margin: 4.5px 0 25px;
   }
 
   .hide-toggle-section {
@@ -857,20 +870,28 @@ a {
     height: 42px;
   }
 
-  .mini-google-logo {
+  .mini-google-logo,
+  .shortcut-mini-google-logo {
     font-family: 'Josefin Sans',
       sans-serif;
     font-size: 1.3rem;
-    color: #fff;
     text-align: center;
     margin: 0;
   }
 
-  .search-hr {
+  .mini-google-logo {
+    color: #fff;
+  }
+
+  .search-hr,
+  .shortcut-search-hr {
     height: 9px;
     margin: 0;
-    background-color: #fff;
     border-radius: 5px;
+  }
+
+  .search-hr {
+    background-color: #fff;
   }
 
   #mini-shortcuts {
@@ -941,8 +962,8 @@ a {
   }
 
 
-  .hidden-modal {
+  /* .hidden-modal {
     display: none;
-  }
+  } */
 
 }
