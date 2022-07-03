@@ -608,94 +608,8 @@ a {
     color: #8BB4F7;
   }
 
-  .bottom-text h4,
-  .hide-text-container h4,
-  .bottom-text p,
-  .hide-text-container p {
-    font-size: 0.8rem;
-    letter-spacing: .005px;
-  }
 
-  .bottom-text h4,
-  .hide-text-container h4 {
-    color: #fff;
-  }
-
-  .bottom-text p,
-  .hide-text-container p {
-    color: #9AA0A6;
-  }
-
-  .bottom-text {
-    padding-left: 2px;
-  }
-
-  .bottom-text h4 {
-    margin-bottom: 0.5px;
-  }
-
-  .bottom-text p {
-    margin: 4.5px 0 25px;
-  }
-
-  .hide-toggle-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 542px;
-    border: 1px solid #5F6367;
-    border-radius: 4px;
-  }
-
-  .slashed-eye-icon-container {
-    display: flex;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    margin: 0 20px 0 24px;
-  }
-
-  .fa-eye-slash {
-    color: #9AA0A6;
-  }
-
-  .hide-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 388px;
-    height: 62px;
-  }
-
-  .hide-text-container h4,
-  .hide-text-container p {
-    margin: 0;
-  }
-
-  .hide-toggle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 34px;
-    height: 16px;
-    margin: 0 20px 0 0;
-  }
-
-  #hide-toggle-switch {
-    width: 28px;
-    height: 12px;
-  }
-
-  #hide-toggle-switch-span {
-    background-color: #9AA0A6;
-    width: 28px;
-    height: 12px;
-  }
-
-  #hide-toggle-switch-knob {
-    width: 16px;
-    height: 16px;
-  }
+  /* ----------------- MODAL GRID SECTION ------------------ */
 
   #modal-grid {
     display: grid;
@@ -810,6 +724,9 @@ a {
     background-color: #fff;
   }
 
+
+  /* ----------------- MODAL SHORTCUTS SECTION ------------------ */
+
   #mini-shortcuts {
     width: 82%;
     height: 42px;
@@ -915,6 +832,98 @@ a {
     background-color: #DADCE0;
   }
 
+  .bottom-text h4,
+  .hide-text-container h4,
+  .bottom-text p,
+  .hide-text-container p {
+    font-size: 0.8rem;
+    letter-spacing: .005px;
+  }
+
+  .bottom-text h4,
+  .hide-text-container h4 {
+    color: #fff;
+  }
+
+  .bottom-text p,
+  .hide-text-container p {
+    color: #9AA0A6;
+  }
+
+  .bottom-text {
+    padding-left: 2px;
+  }
+
+  .bottom-text h4 {
+    margin-bottom: 0.5px;
+  }
+
+  .bottom-text p {
+    margin: 4.5px 0 25px;
+  }
+
+  .hide-toggle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 542px;
+    border: 1px solid #5F6367;
+    border-radius: 4px;
+  }
+
+  .slashed-eye-icon-container {
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    margin: 0 20px 0 24px;
+  }
+
+  .fa-eye-slash {
+    color: #9AA0A6;
+  }
+
+  .hide-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 388px;
+    height: 62px;
+  }
+
+  .hide-text-container h4,
+  .hide-text-container p {
+    margin: 0;
+  }
+
+  .hide-toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 16px;
+    margin: 0 20px 0 0;
+  }
+
+  #hide-toggle-switch {
+    width: 28px;
+    height: 12px;
+  }
+
+  #hide-toggle-switch-span {
+    background-color: #9AA0A6;
+    width: 28px;
+    height: 12px;
+  }
+
+  #hide-toggle-switch-knob {
+    width: 16px;
+    height: 16px;
+  }
+
+
+  /* ----------------- MODAL CARDS SECTION ------------------ */
+
   #modal-cards-section {
     width: 582px;
     height: 372px;
@@ -988,20 +997,7 @@ a {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* ----------------- COLOR THEME SECTION ------------------ */
 
   #color-theme-section {
     display: grid;
@@ -1343,9 +1339,8 @@ a {
     margin-left: 8px;
   }
 
-
-  /* .hidden-modal {
+  .hidden-modal {
     display: none;
-  } */
+  }
 
 }
