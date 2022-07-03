@@ -1,726 +1,760 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- ------------ META TAGS ------------ -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- ------------ META TAGS ------------ -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ------------ MAIN STYLESHEET ------------ -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- ------------ MAIN STYLESHEET ------------ -->
-  <link rel="stylesheet" href="css/styles.css" />
+    <!-- ------------ NORMALIZE CSS ------------ -->
+    <link rel="stylesheet" href="css/normalize.css" />
 
-  <!-- ------------ NORMALIZE CSS ------------ -->
-  <link rel="stylesheet" href="css/normalize.css" />
+    <!-- ------------ CSS TOGGLE SWITCH ---------- -->
+    <link rel="stylesheet" href="css/toggle-switch.css" />
 
-  <!-- ------------ CSS TOGGLE SWITCH ---------- -->
-  <link rel="stylesheet" href="css/toggle-switch.css" />
+    <!-- ------------ GOOGLE FONT ------------ -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ------------ GOOGLE FONT ------------ -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <!-- ------------ FONT AWESOME ------------ -->
+    <script
+      src="https://kit.fontawesome.com/e10edea624.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- ------------ FONT AWESOME ------------ -->
-  <script src="https://kit.fontawesome.com/e10edea624.js" crossorigin="anonymous"></script>
+    <title>Google Dark Mode Copy</title>
+  </head>
 
-  <title>Google Dark Mode Copy</title>
-</head>
+  <body>
+    <!-- ------------ NAV ------------ -->
+    <header>
+      <nav id="nav">
+        <a class="nav-text hide-mobile" href="https://mail.google.com/"
+          >Gmail</a
+        >
 
-<body>
-  <!-- ------------ NAV ------------ -->
-  <header>
-    <nav id="nav">
-      <a class="nav-text hide-mobile" href="https://mail.google.com/">Gmail</a>
+        <a
+          class="nav-text hide-mobile"
+          href="https://www.google.com/imghp?hl=en&tab=ri&ogbl"
+          >Images</a
+        >
 
-      <a class="nav-text hide-mobile" href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a>
+        <a id="dot-grid" class="hvr-glow hvr-fade hide-mobile" href="#"
+          ><i class="center-icons fas fa-th"></i
+        ></a>
 
-      <a id="dot-grid" class="hvr-glow hvr-fade hide-mobile" href="#"><i class="center-icons fas fa-th"></i></a>
+        <a id="profile-pic" class="hvr-glow hvr-fade" href="#"
+          ><i class="center-icons fas fa-user-circle fa-2x"></i
+        ></a>
+      </nav>
+    </header>
 
-      <a id="profile-pic" class="hvr-glow hvr-fade" href="#"><i class="center-icons fas fa-user-circle fa-2x"></i></a>
-    </nav>
-  </header>
-
-  <!-- ------------ GOOGLE HEADING ------------ -->
-  <div id="google-section">
-    <h1 id="google-heading">Google</h1>
-  </div>
-
-  <!-- ------------ SEARCH BAR ------------ -->
-  <div class="search-bar">
-    <div id="search-contents">
-      <i id="mag-glass" class="fas fa-search"></i>
-      <input id="search-input-sm" class="hide-lg-screen" type="search" placeholder="Search or type URL"
-        spellcheck="false" autocomplete="off" />
-      <input id="search-input" class="hide-mobile" type="search" placeholder="Search Google or type a URL"
-        spellcheck="false" autocomplete="off" />
-      <button id="voice-dictation" type="button">
-        <i class="fas fa-microphone fa-lg"></i>
-      </button>
-      <div id="dropdown-hide"></div>
-      <ul class="dropdown">
-        <li class="dropdown-list-items">
-          <a
-            href="https://www.google.com/search?q=Juneteenth&rlz=1C5CHFA_enUS750US750&oq=juneteenth&aqs=chrome.0.69i59j0i131i433i512j0i67i131i433j0i131i433i512l3j0i67i131i433j0i131i433i512j0i131i433j0i131i433i512.2523j1j7&sourceid=chrome&ie=UTF-8">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              juneteenth
-              <span class="search-span">- Google Search</span>
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-        <li class="dropdown-list-items">
-          <a href="what date is earth day 2021">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              what date is earth day 2023
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-        <li class="dropdown-list-items">
-          <a
-            href="https://www.google.com/search?q=google+fonts&rlz=1C5CHFA_enUS750US750&oq=google+fonts&aqs=chrome.0.69i59j0i433i512l2j0i131i433i512j69i60l2j69i65j69i60.2042j0j9&sourceid=chrome&ie=UTF-8">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              google fonts
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-        <li class="dropdown-list-items">
-          <a
-            href="https://www.google.com/search?q=animate+css&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaI57yvnHk1FGTAzXF1lOpnV8cm6g%3A1655873407176&ei=f5-yYqioCrXHkPIPsqudiA0&ved=0ahUKEwjo4-iRocD4AhW1I0QIHbJVB9EQ4dUDCA4&uact=5&oq=animate+css&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOg0ILhDHARDRAxCwAxBDOgoIABDkAhCwAxgBOgQIIxAnOg0IABCABBCHAhCxAxAUOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CgguEMcBENEDEEM6EAguELEDEIMBEMcBENEDEEM6BAgAEEM6BwgjEOoCECc6CwguEIAEEMcBEKMCOgcIABCxAxBDOgcILhCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAVDxBFj_H2C0IWgDcAF4AIABaogB2gmSAQQxNi4xmAEAoAEBsAEKyAERwAEB2gEGCAEQARgJ&sclient=gws-wiz">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              animate css
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-        <li class="dropdown-list-items">
-          <a
-            href="https://www.google.com/search?q=font+awesome&rlz=1C5CHFA_enUS750US750&oq=font+awesome&aqs=chrome..69i57j69i59j35i39j0i131i433i512j69i60l3j69i65.2518j0j9&sourceid=chrome&ie=UTF-8">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              font awesome
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-        <li class="dropdown-list-items">
-          <a
-            href="https://www.google.com/search?q=population+of+tokyo&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsYr2RZQS0K0HPc0mpBFv8VhrApWNg%3A1655873459999&ei=s5-yYuDAPKCdkPIPiPqImA4&ved=0ahUKEwig5oCrocD4AhWgDkQIHQg9AuMQ4dUDCA4&uact=5&oq=population+of+tokyo&gs_lcp=Cgdnd3Mtd2l6EAMyDQgAEIAEELEDEEYQ-wEyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CwgAEIAEELEDEIMBOgsILhCABBDHARDRAzoLCC4QgAQQxwEQowI6BAgAEEM6DgguEIAEELEDEMcBEKMCOggIABCABBCxAzoLCC4QgAQQxwEQrwE6CwguEIAEELEDEIMBOgoIABCABBCHAhAUOg0IABCABBCHAhCxAxAUSgQIQRgASgQIRhgAUABYvBxg2CVoAHABeACAAXeIAfoKkgEEMTguMZgBAKABAcABAQ&sclient=gws-wiz">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              population of tokyo
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-        <li class="dropdown-list-items">
-          <a
-            href="https://www.google.com/search?q=css+tricks+grid&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaVH7bgavM5YzNcByxsnNe9f1G6Kw%3A1655873481486&ei=yZ-yYsaqHfaC0PEPteqTuAI&ved=0ahUKEwiGs6C1ocD4AhV2ATQIHTX1BCcQ4dUDCA4&uact=5&oq=css+tricks+grid&gs_lcp=Cgdnd3Mtd2l6EAMyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCGAzIFCAAQhgMyBQgAEIYDOgQIIxAnOgQIABBDOhEILhCABBCxAxCDARDHARCjAjoECC4QQzoKCAAQgAQQhwIQFDoHCC4Q1AIQQzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEEMcBEK8BOgcIABCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAFAAWKYTYPYVaABwAXgAgAFxiAHwCJIBBDEzLjKYAQCgAQHAAQE&sclient=gws-wiz">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              css tricks grid
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-        <li class="dropdown-list-items">
-          <a
-            href="https://www.google.com/search?q=chart.js&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsb5IaTbIlcSqU53V7JCIH_ZGZtXQw%3A1655873526557&ei=9p-yYsXSIdfQkPIPgua2sAE&ved=0ahUKEwjFpd_KocD4AhVXKEQIHQKzDRYQ4dUDCA4&uact=5&oq=chart.js&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEEM6EQguEIAEELEDEIMBEMcBENEDOggILhCxAxCDAToFCAAQkQI6EQguEIAEELEDEIMBEMcBEKMCOgoILhCABBCHAhAUOgsIABCABBCxAxCDAToFCC4QgAQ6CggAELEDEIMBEEM6FAguEIAEELEDEIMBEMcBEKMCENQCOgsILhCABBCxAxDUAjoICAAQgAQQsQNKBAhBGABKBAhGGABQAFjkDmDdEWgAcAF4AIABcIgBkgWSAQM2LjKYAQCgAQHAAQE&sclient=gws-wiz">
-            <p class="dropdown-text">
-              <i class="fas fa-regular fa-clock"></i>
-              chart.js
-            </p>
-            <div class="search-x"></div>
-          </a>
-        </li>
-      </ul>
+    <!-- ------------ GOOGLE HEADING ------------ -->
+    <div id="google-section">
+      <h1 id="google-heading">Google</h1>
     </div>
-  </div>
 
-  <!-- ------------ TOP WEBSITES ------------ -->
-  <div id="top-websites">
-    <a class="top-site hvr-fade" title="CodePen" href="https://codepen.io">
-      <div class="top-site-icon-bg">
-        <div class="top-site-icon">
-          <i class="fab fa-codepen fa-2x"></i>
-        </div>
-      </div>
-      <div class="top-site-title">
-        <p>CodePen</p>
-      </div>
-    </a>
-
-    <a class="top-site hvr-fade" title="GitHub" href="https://GitHub.com">
-      <div class="top-site-icon-bg">
-        <div class="top-site-icon">
-          <i class="fab fa-github-square fa-2x"></i>
-        </div>
-      </div>
-      <div class="top-site-title">
-        <p>GitHub</p>
-      </div>
-    </a>
-
-    <a class="top-site hvr-fade" title="Twitter" href="https://Twitter.com">
-      <div class="top-site-icon-bg">
-        <div class="top-site-icon">
-          <i class="fab fa-twitter-square fa-2x"></i>
-        </div>
-      </div>
-      <div class="top-site-title">
-        <p>Twitter</p>
-      </div>
-    </a>
-
-    <a class="top-site hvr-fade" title="YouTube" href="https://YouTube.com">
-      <div class="top-site-icon-bg">
-        <div class="top-site-icon">
-          <i class="fab fa-youtube fa-2x"></i>
-        </div>
-      </div>
-      <div class="top-site-title">
-        <p>YouTube</p>
-      </div>
-    </a>
-
-    <a class="top-site hvr-fade" title="Stack Overflow" href="https://StackOverflow.com">
-      <div class="top-site-icon-bg">
-        <div class="top-site-icon">
-          <i class="fab fa-stack-overflow fa-2x"></i>
-        </div>
-      </div>
-      <div class="top-site-title">
-        <p>Stack Overflow</p>
-      </div>
-    </a>
-
-    <a class="top-site hvr-fade" title="Add Shortcut" href="#">
-      <div class="top-site-icon-bg">
-        <div class="top-site-icon plus-icon">
-          <i class="fas fa-solid fa-plus"></i>
-        </div>
-      </div>
-      <div class="top-site-title">
-        <p>Add shortcut</p>
-      </div>
-    </a>
-  </div>
-
-  <!-- ------------ VOTE SECTION ------------ -->
-  <div id="vote-section">
-    <div id="palette-icon">
-      <i class="fas fa-palette"></i>
-    </div>
-    <div id="vote-button-container">
-      <a href="https://www.google.com/doodles" class="vote-link">
-        <button id="vote-button" type="button">
-          Vote for your favorite Doodle for Google
+    <!-- ------------ SEARCH BAR ------------ -->
+    <div class="search-bar">
+      <div id="search-contents">
+        <i id="mag-glass" class="fas fa-search"></i>
+        <input
+          id="search-input-sm"
+          class="hide-lg-screen"
+          type="search"
+          placeholder="Search or type URL"
+          spellcheck="false"
+          autocomplete="off"
+        />
+        <input
+          id="search-input"
+          class="hide-mobile"
+          type="search"
+          placeholder="Search Google or type a URL"
+          spellcheck="false"
+          autocomplete="off"
+        />
+        <button id="voice-dictation" type="button">
+          <i class="fas fa-microphone fa-lg"></i>
         </button>
+        <div id="dropdown-hide"></div>
+        <ul class="dropdown">
+          <li class="dropdown-list-items">
+            <a
+              href="https://www.google.com/search?q=Juneteenth&rlz=1C5CHFA_enUS750US750&oq=juneteenth&aqs=chrome.0.69i59j0i131i433i512j0i67i131i433j0i131i433i512l3j0i67i131i433j0i131i433i512j0i131i433j0i131i433i512.2523j1j7&sourceid=chrome&ie=UTF-8"
+            >
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                juneteenth
+                <span class="search-span">- Google Search</span>
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a href="what date is earth day 2021">
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                what date is earth day 2023
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a
+              href="https://www.google.com/search?q=google+fonts&rlz=1C5CHFA_enUS750US750&oq=google+fonts&aqs=chrome.0.69i59j0i433i512l2j0i131i433i512j69i60l2j69i65j69i60.2042j0j9&sourceid=chrome&ie=UTF-8"
+            >
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                google fonts
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a
+              href="https://www.google.com/search?q=animate+css&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaI57yvnHk1FGTAzXF1lOpnV8cm6g%3A1655873407176&ei=f5-yYqioCrXHkPIPsqudiA0&ved=0ahUKEwjo4-iRocD4AhW1I0QIHbJVB9EQ4dUDCA4&uact=5&oq=animate+css&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOg0ILhDHARDRAxCwAxBDOgoIABDkAhCwAxgBOgQIIxAnOg0IABCABBCHAhCxAxAUOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CgguEMcBENEDEEM6EAguELEDEIMBEMcBENEDEEM6BAgAEEM6BwgjEOoCECc6CwguEIAEEMcBEKMCOgcIABCxAxBDOgcILhCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAVDxBFj_H2C0IWgDcAF4AIABaogB2gmSAQQxNi4xmAEAoAEBsAEKyAERwAEB2gEGCAEQARgJ&sclient=gws-wiz"
+            >
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                animate css
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a
+              href="https://www.google.com/search?q=font+awesome&rlz=1C5CHFA_enUS750US750&oq=font+awesome&aqs=chrome..69i57j69i59j35i39j0i131i433i512j69i60l3j69i65.2518j0j9&sourceid=chrome&ie=UTF-8"
+            >
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                font awesome
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a
+              href="https://www.google.com/search?q=population+of+tokyo&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsYr2RZQS0K0HPc0mpBFv8VhrApWNg%3A1655873459999&ei=s5-yYuDAPKCdkPIPiPqImA4&ved=0ahUKEwig5oCrocD4AhWgDkQIHQg9AuMQ4dUDCA4&uact=5&oq=population+of+tokyo&gs_lcp=Cgdnd3Mtd2l6EAMyDQgAEIAEELEDEEYQ-wEyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CwgAEIAEELEDEIMBOgsILhCABBDHARDRAzoLCC4QgAQQxwEQowI6BAgAEEM6DgguEIAEELEDEMcBEKMCOggIABCABBCxAzoLCC4QgAQQxwEQrwE6CwguEIAEELEDEIMBOgoIABCABBCHAhAUOg0IABCABBCHAhCxAxAUSgQIQRgASgQIRhgAUABYvBxg2CVoAHABeACAAXeIAfoKkgEEMTguMZgBAKABAcABAQ&sclient=gws-wiz"
+            >
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                population of tokyo
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a
+              href="https://www.google.com/search?q=css+tricks+grid&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsaVH7bgavM5YzNcByxsnNe9f1G6Kw%3A1655873481486&ei=yZ-yYsaqHfaC0PEPteqTuAI&ved=0ahUKEwiGs6C1ocD4AhV2ATQIHTX1BCcQ4dUDCA4&uact=5&oq=css+tricks+grid&gs_lcp=Cgdnd3Mtd2l6EAMyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCGAzIFCAAQhgMyBQgAEIYDOgQIIxAnOgQIABBDOhEILhCABBCxAxCDARDHARCjAjoECC4QQzoKCAAQgAQQhwIQFDoHCC4Q1AIQQzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEEMcBEK8BOgcIABCxAxBDOggIABCABBCxA0oECEEYAEoECEYYAFAAWKYTYPYVaABwAXgAgAFxiAHwCJIBBDEzLjKYAQCgAQHAAQE&sclient=gws-wiz"
+            >
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                css tricks grid
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a
+              href="https://www.google.com/search?q=chart.js&rlz=1C5CHFA_enUS750US750&sxsrf=ALiCzsb5IaTbIlcSqU53V7JCIH_ZGZtXQw%3A1655873526557&ei=9p-yYsXSIdfQkPIPgua2sAE&ved=0ahUKEwjFpd_KocD4AhVXKEQIHQKzDRYQ4dUDCA4&uact=5&oq=chart.js&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEEM6EQguEIAEELEDEIMBEMcBENEDOggILhCxAxCDAToFCAAQkQI6EQguEIAEELEDEIMBEMcBEKMCOgoILhCABBCHAhAUOgsIABCABBCxAxCDAToFCC4QgAQ6CggAELEDEIMBEEM6FAguEIAEELEDEIMBEMcBEKMCENQCOgsILhCABBCxAxDUAjoICAAQgAQQsQNKBAhBGABKBAhGGABQAFjkDmDdEWgAcAF4AIABcIgBkgWSAQM2LjKYAQCgAQHAAQE&sclient=gws-wiz"
+            >
+              <p class="dropdown-text">
+                <i class="fas fa-regular fa-clock"></i>
+                chart.js
+              </p>
+              <div class="search-x"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ------------ TOP WEBSITES ------------ -->
+    <div id="top-websites">
+      <a class="top-site hvr-fade" title="CodePen" href="https://codepen.io">
+        <div class="top-site-icon-bg">
+          <div class="top-site-icon">
+            <i class="fab fa-codepen fa-2x"></i>
+          </div>
+        </div>
+        <div class="top-site-title">
+          <p>CodePen</p>
+        </div>
+      </a>
+
+      <a class="top-site hvr-fade" title="GitHub" href="https://GitHub.com">
+        <div class="top-site-icon-bg">
+          <div class="top-site-icon">
+            <i class="fab fa-github-square fa-2x"></i>
+          </div>
+        </div>
+        <div class="top-site-title">
+          <p>GitHub</p>
+        </div>
+      </a>
+
+      <a class="top-site hvr-fade" title="Twitter" href="https://Twitter.com">
+        <div class="top-site-icon-bg">
+          <div class="top-site-icon">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </div>
+        </div>
+        <div class="top-site-title">
+          <p>Twitter</p>
+        </div>
+      </a>
+
+      <a class="top-site hvr-fade" title="YouTube" href="https://YouTube.com">
+        <div class="top-site-icon-bg">
+          <div class="top-site-icon">
+            <i class="fab fa-youtube fa-2x"></i>
+          </div>
+        </div>
+        <div class="top-site-title">
+          <p>YouTube</p>
+        </div>
+      </a>
+
+      <a
+        class="top-site hvr-fade"
+        title="Stack Overflow"
+        href="https://StackOverflow.com"
+      >
+        <div class="top-site-icon-bg">
+          <div class="top-site-icon">
+            <i class="fab fa-stack-overflow fa-2x"></i>
+          </div>
+        </div>
+        <div class="top-site-title">
+          <p>Stack Overflow</p>
+        </div>
+      </a>
+
+      <a class="top-site hvr-fade" title="Add Shortcut" href="#">
+        <div class="top-site-icon-bg">
+          <div class="top-site-icon plus-icon">
+            <i class="fas fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="top-site-title">
+          <p>Add shortcut</p>
+        </div>
       </a>
     </div>
-  </div>
 
-  <!-- ------------ FOOTER SECTION ------------ -->
+    <!-- ------------ VOTE SECTION ------------ -->
+    <div id="vote-section">
+      <div id="palette-icon">
+        <i class="fas fa-palette"></i>
+      </div>
+      <div id="vote-button-container">
+        <a href="https://www.google.com/doodles" class="vote-link">
+          <button id="vote-button" type="button">
+            Vote for your favorite Doodle for Google
+          </button>
+        </a>
+      </div>
+    </div>
 
+    <!-- ------------ FOOTER SECTION ------------ -->
 
-  <footer class="hide-custom">
-    <a id="customize-section">
-      <button id="customize-button" type="button">
-        <div id="customize-icon">
-          <i class="fas fa-pencil-alt"></i>
-        </div>
-        <div id="customize-text">
-          <p>Customize Chrome</p>
-        </div>
-      </button>
-    </a>
-  </footer>
+    <footer class="hide-custom">
+      <a id="customize-section">
+        <button id="customize-button" type="button">
+          <div id="customize-icon">
+            <i class="fas fa-pencil-alt"></i>
+          </div>
+          <div id="customize-text">
+            <p>Customize Chrome</p>
+          </div>
+        </button>
+      </a>
+    </footer>
 
+    <!-- ------------ MODAL AND OVERLAY ------------ -->
+    <div class="customize-overlay hidden-modal">
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-header-p">Customize this page</p>
+          </div>
 
-  <!-- ------------ MODAL AND OVERLAY ------------ -->
-  <div class="overlay hidden-modal">
-    <div class="modal">
+          <div class="top-scroll-border"></div>
 
-      <div class="modal-content">
-        <div class="modal-header">
-          <p class="modal-header-p">Customize this page</p>
-        </div>
-
-        <div class="top-scroll-border"></div>
-
-        <div class="modal-center-container">
-          <div class="modal-categories">
-            <ul class="modal-list">
-              <li class="modal-list-item">
-                <a class="modal-list-link" href="#">
+          <div class="modal-center-container">
+            <div class="modal-categories">
+              <ul class="modal-list">
+                <li
+                  class="modal-list-item modal-list-item-one modal-list-item-active"
+                >
                   <div class="modal-icon-container">
                     <i class="fas fa-solid fa-image"></i>
                   </div>
                   <p id="modal-list-p-one" class="modal-list-p">Background</p>
-                </a>
-              </li>
-              <li class="modal-list-item">
-                <a class="modal-list-link" href="#">
+                </li>
+                <li class="modal-list-item modal-list-item-two">
                   <div class="modal-icon-container">
                     <i class="fas fa-solid fa-link"></i>
                   </div>
                   <p class="modal-list-p">Shortcuts</p>
-                </a>
-              </li>
-              <li class="modal-list-item">
-                <a class="modal-list-link" href="#">
+                </li>
+                <li class="modal-list-item modal-list-item-three">
                   <div class="modal-icon-container">
                     <i class="fas fa-solid fa-server"></i>
                   </div>
                   <p class="modal-list-p">Cards</p>
-                </a>
-              </li>
-              <li class="modal-list-item">
-                <a class="modal-list-link" href="#">
+                </li>
+                <li class="modal-list-item modal-list-item-four">
                   <div class="modal-icon-container">
                     <i class="fas fa-solid fa-palette"></i>
                   </div>
                   <p class="modal-list-p">Color and theme</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal-grid-container">
+              <div id="modal-grid">
+                <a href="#" class="modal-grid-item-one-link">
+                  <div class="modal-grid-item modal-grid-item-one">
+                    <div class="upload-from-device">
+                      <div class="arrow-icon-container">
+                        <i id="fa-arrow" class="fas fa-solid fa-upload"></i>
+                      </div>
+                      <p class="modal-grid-p-one">Upload from device</p>
+                    </div>
+                  </div>
+                  <div class="modal-grid-one-tab"></div>
                 </a>
-              </li>
-            </ul>
+                <div class="modal-grid-item">
+                  <div class="mini-google-page-container">
+                    <div class="mini-google-page">
+                      <div id="mini-header">
+                        <p class="mini-google-logo">Google</p>
+                        <hr class="search-hr" />
+                      </div>
+                      <div id="mini-shortcuts">
+                        <svg
+                          class="dot-img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="116"
+                          height="42"
+                        >
+                          <path
+                            d="M6.009 11.38a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.034 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zM6.008 41.114a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15z"
+                            fill="#fff"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="selected-check">
+                      <i class="fas fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                  <p class="modal-grid-p">Classic Chrome</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/steve-johnson-wpw8sHoBtSY-unsplash.jpg"
+                    alt="painting of rainbow of colors"
+                  />
+                  <p class="modal-grid-p">LGBTQ Collection</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/tom-gainor-ZqLeQDjY6fY-unsplash.jpg"
+                    alt="lake surrounded by mountains with a couldy sky above"
+                  />
+                  <p class="modal-grid-p">Landscapes</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/steve-johnson-5Oe8KFH5998-unsplash.jpg"
+                    alt="a painting"
+                  />
+                  <p class="modal-grid-p">Art</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/clark-van-der-beken-Tk0B3Dfkf_4-unsplash.jpg"
+                    alt="geometric shapes"
+                  />
+                  <p class="modal-grid-p">Geometric Shapes</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/luke-chesser-pJadQetzTkI-unsplash.jpg"
+                    alt="blue gradient background"
+                  />
+                  <p class="modal-grid-p">Gradients</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/juan-gomez-6AyyafVMJzQ-unsplash.jpg"
+                    alt="rock formation coming out of water of a beach shore on an overcast day"
+                  />
+                  <p class="modal-grid-p">Seascapes</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/peter-gargiulo-cGNCepznaV8-unsplash.jpg"
+                    alt="black textured background"
+                  />
+                  <p class="modal-grid-p">Textures</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/nasa-Q1p7bh3SHj8-unsplash.jpg"
+                    alt="view of earth at night with lights on surface"
+                  />
+                  <p class="modal-grid-p">Earth</p>
+                </div>
+                <div class="modal-grid-item">
+                  <img
+                    class="modal-img"
+                    src="imgs/james-lee-YIy1cd3xN4w-unsplash.jpg"
+                    alt="black textured background"
+                  />
+                  <p class="modal-grid-p">Solid Colors</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-shortcuts-container hide-shortcuts">
+              <div class="modal-shortcuts-top">
+                <div class="my-shortcuts-container">
+                  <div class="mini-google-container">
+                    <div class="user-svg-container">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="96"
+                        height="96"
+                        fill="#5F6367"
+                        viewBox="0 0 49.75 49.75"
+                      >
+                        <path
+                          d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 6c3.31 0 6 2.69 6 6 0 3.32-2.69 6-6 6s-6-2.68-6-6c0-3.31 2.69-6 6-6zm0 28.4c-5.01 0-9.41-2.56-12-6.44.05-3.97 8.01-6.16 12-6.16s11.94 2.19 12 6.16c-2.59 3.88-6.99 6.44-12 6.44z"
+                        />
+                        <path d="M0 0h48v48H0z" fill="none" />
+                      </svg>
+                    </div>
+                    <div class="shortcut-mini-google-page">
+                      <div id="mini-header">
+                        <p class="shortcut-mini-google-logo">Google</p>
+                        <hr class="shortcut-search-hr" />
+                      </div>
+                      <div id="mini-shortcuts">
+                        <svg
+                          class="dot-img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="116"
+                          height="42"
+                        >
+                          <path
+                            d="M6.009 11.38a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.034 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zM6.008 41.114a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15z"
+                            fill="#9AA0A6"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="checked-icon-container"></div>
+                  </div>
+                  <div class="bottom-text">
+                    <h4>My shortcuts</h4>
+                    <p>Shortcuts are curated by you</p>
+                  </div>
+                </div>
+                <div class="most-visited-sites-container">
+                  <div class="mini-google-container">
+                    <div class="earth-svg-container">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="96"
+                        height="96"
+                        viewBox="0 0 24.75 24.75"
+                      >
+                        <path
+                          d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM4 12h4.4c3.407.022 4.922 1.73 4.543 5.127H9.488v2.47a8.004 8.004 0 0010.498-8.083C19.327 12.504 18.332 13 17 13c-2.137 0-3.206-.916-3.206-2.75h-3.748c-.274-2.728.683-4.092 2.87-4.092 0-.975.327-1.597.811-1.97A8.004 8.004 0 004 12z"
+                          fill="#5F6367"
+                        />
+                      </svg>
+                    </div>
+                    <div class="shortcut-mini-google-page">
+                      <div id="mini-header">
+                        <p class="shortcut-mini-google-logo">Google</p>
+                        <hr class="shortcut-search-hr" />
+                      </div>
+                      <div id="mini-shortcuts">
+                        <svg
+                          class="dot-img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="116"
+                          height="42"
+                        >
+                          <path
+                            d="M6.009 11.38a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.034 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zM6.008 41.114a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15z"
+                            fill="#9AA0A6"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-text">
+                    <h4>Most visited sites</h4>
+                    <p>
+                      Shortcuts are suggested based on websites you visit often
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="hide-toggle-section">
+                <div class="slashed-eye-icon-container">
+                  <i class="fas fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="hide-text-container">
+                  <h4>Hide shortcuts</h4>
+                  <p>Don't show shortcuts on this page</p>
+                </div>
+                <div class="hide-toggle-container">
+                  <label
+                    id="hide-toggle-switch"
+                    class="switch-light switch-material"
+                    onclick=""
+                  >
+                    <input type="checkbox" />
+                    <span id="hide-toggle-switch-span">
+                      <span class="off"></span>
+                      <span class="on"></span>
+                      <a id="hide-toggle-switch-knob"></a>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal-cards-section" class="hide-cards">
+              <div class="modal-cards-radios">
+                <div class="modal-cards-radio-container">
+                  <input id="modal-cards-radio-one" type="radio" />
+                  <label class="cards-radio-label" for="modal-cards-radio-one"
+                    >Hide all cards</label
+                  >
+                </div>
+                <div class="modal-cards-radio-container">
+                  <input id="modal-cards-radio-two" type="radio" />
+                  <label class="cards-radio-label" for="modal-cards-radio-two"
+                    >Customize cards</label
+                  >
+                </div>
+              </div>
+              <div class="modal-cards-toggles">
+                <div
+                  id="cards-top-toggle-container"
+                  class="cards-toggle-container"
+                >
+                  <p class="cards-toggle-p">Recipe Ideas</p>
+                  <div class="card-toggle">
+                    <label
+                      id="hide-toggle-switch"
+                      class="switch-light switch-material"
+                      onclick=""
+                    >
+                      <input type="checkbox" />
+                      <span id="hide-toggle-switch-span">
+                        <span class="off"></span>
+                        <span class="on"></span>
+                        <a id="hide-toggle-switch-knob"></a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  id="cards-middle-toggle-container"
+                  class="cards-toggle-container"
+                >
+                  <p class="cards-toggle-p">Your carts</p>
+                  <div class="card-toggle">
+                    <label
+                      id="hide-toggle-switch"
+                      class="switch-light switch-material"
+                      onclick=""
+                    >
+                      <input type="checkbox" />
+                      <span id="hide-toggle-switch-span">
+                        <span class="off"></span>
+                        <span class="on"></span>
+                        <a id="hide-toggle-switch-knob"></a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  id="cards-bottom-toggle-container"
+                  class="cards-toggle-container"
+                >
+                  <p class="cards-toggle-p">Get discounts</p>
+                  <div class="card-toggle">
+                    <label
+                      id="hide-toggle-switch"
+                      class="switch-light switch-material"
+                      onclick=""
+                    >
+                      <input type="checkbox" />
+                      <span id="hide-toggle-switch-span">
+                        <span class="off"></span>
+                        <span class="on"></span>
+                        <a id="hide-toggle-switch-knob"></a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="hide-color-theme" class="hide-color-theme">
+              <div id="color-theme-section">
+                <div class="color-selection custom-color-border">
+                  <div class="white color-half"></div>
+                  <div class="custom-color color-half"></div>
+                  <svg
+                    id="pencil-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 28 28"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M17.66 5.41l.92.92-2.69 2.69-.92-.92 2.69-2.69M17.67 3c-.26 0-.51.1-.71.29l-3.12 3.12-1.93-1.91-1.41 1.41 1.42 1.42L3 16.25V21h4.75l8.92-8.92 1.42 1.42 1.41-1.41-1.92-1.92 3.12-3.12c.4-.4.4-1.03.01-1.42l-2.34-2.34c-.2-.19-.45-.29-.7-.29zM6.92 19L5 17.08l8.06-8.06 1.92 1.92L6.92 19z"
+                    />
+                  </svg>
+                </div>
+                <div class="color-selection default-color-border">
+                  <div class="default-color-light color-half"></div>
+                  <div class="default-color color-half"></div>
+                </div>
+                <div class="color-selection warm-grey-border">
+                  <div class="white color-half"></div>
+                  <div class="warm-grey color-half"></div>
+                </div>
+                <div class="color-selection cool-grey-border">
+                  <div class="cool-grey-light color-half"></div>
+                  <div class="cool-grey color-half"></div>
+                </div>
+                <div class="color-selection midnight-blue-border">
+                  <div class="midnight-blue-light color-half"></div>
+                  <div class="midnight-blue color-half"></div>
+                </div>
+                <div class="color-selection black-border">
+                  <div class="black-light color-half"></div>
+                  <div class="black color-half"></div>
+                </div>
+                <div class="color-selection beige-white-border">
+                  <div class="white color-half"></div>
+                  <div class="beige-white color-half"></div>
+                </div>
+                <div class="color-selection yellow-white-border">
+                  <div class="white color-half"></div>
+                  <div class="yellow-white color-half"></div>
+                </div>
+                <div class="color-selection green-white-border">
+                  <div class="white color-half"></div>
+                  <div class="green-white color-half"></div>
+                </div>
+                <div class="color-selection light-teal-white-border">
+                  <div class="white color-half"></div>
+                  <div class="light-teal-white color-half"></div>
+                </div>
+                <div class="color-selection light-purple-white-border">
+                  <div class="white color-half"></div>
+                  <div class="light-purple-white color-half"></div>
+                </div>
+                <div class="color-selection pink-white-border">
+                  <div class="white color-half"></div>
+                  <div class="pink-white color-half"></div>
+                </div>
+                <div class="color-selection beige-border">
+                  <div class="beige-light color-half"></div>
+                  <div class="beige color-half"></div>
+                </div>
+                <div class="color-selection orange-border">
+                  <div class="orange-light color-half"></div>
+                  <div class="orange color-half"></div>
+                </div>
+                <div class="color-selection light-green-border">
+                  <div class="light-green-light color-half"></div>
+                  <div class="light-green color-half"></div>
+                </div>
+                <div class="color-selection light-teal-border">
+                  <div class="light-teal-light color-half"></div>
+                  <div class="light-teal color-half"></div>
+                </div>
+                <div class="color-selection light-blue-border">
+                  <div class="light-blue-light color-half"></div>
+                  <div class="light-blue color-half"></div>
+                </div>
+                <div class="color-selection pink-border">
+                  <div class="pink-light color-half"></div>
+                  <div class="pink color-half"></div>
+                </div>
+                <div class="color-selection dark-pink-red-border">
+                  <div class="dark-pink-red-light color-half"></div>
+                  <div class="dark-pink-red color-half"></div>
+                </div>
+                <div class="color-selection dark-red-orange-border">
+                  <div class="dark-red-orange-light color-half"></div>
+                  <div class="dark-red-orange color-half"></div>
+                </div>
+                <div class="color-selection dark-green-border">
+                  <div class="dark-green-light color-half"></div>
+                  <div class="dark-green color-half"></div>
+                </div>
+                <div class="color-selection dark-teal-border">
+                  <div class="dark-teal-light color-half"></div>
+                  <div class="dark-teal color-half"></div>
+                </div>
+                <div class="color-selection dark-blue-border">
+                  <div class="dark-blue-light color-half"></div>
+                  <div class="dark-blue color-half"></div>
+                </div>
+                <div class="color-selection dark-purple-border">
+                  <div class="dark-purple-light color-half"></div>
+                  <div class="dark-purple color-half"></div>
+                </div>
+              </div>
+            </div>
           </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <!-- <div id="modal-grid">
-            <a href="#" class="modal-grid-item-one-link">
-              <div class="modal-grid-item modal-grid-item-one">
-                <div class="upload-from-device">
-                  <div class="arrow-icon-container">
-                    <i id="fa-arrow" class="fas fa-solid fa-upload"></i>
-                  </div>
-                  <p class="modal-grid-p-one">Upload from device</p>
-                </div>
-              </div>
-              <div class="modal-grid-one-tab"></div>
-            </a>
-
-            <div class="modal-grid-item">
-              <div class="mini-google-page-container">
-                <div class="mini-google-page">
-                  <div id="mini-header">
-                    <p class="mini-google-logo">Google</p>
-                    <hr class="search-hr">
-                  </div>
-                  <div id="mini-shortcuts">
-                    <svg class="dot-img" xmlns="http://www.w3.org/2000/svg" width="116" height="42">
-                      <path
-                        d="M6.009 11.38a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.034 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zM6.008 41.114a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15z"
-                        fill="#fff" fill-rule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="selected-check">
-                  <i class="fas fa-solid fa-check"></i>
-                </div>
-              </div>
-              <p class="modal-grid-p">Classic Chrome</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/steve-johnson-wpw8sHoBtSY-unsplash.jpg"
-                alt="painting of rainbow of colors">
-              <p class="modal-grid-p">LGBTQ Collection</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/tom-gainor-ZqLeQDjY6fY-unsplash.jpg"
-                alt="lake surrounded by mountains with a couldy sky above">
-              <p class="modal-grid-p">Landscapes</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/steve-johnson-5Oe8KFH5998-unsplash.jpg" alt="a painting">
-              <p class="modal-grid-p">Art</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/clark-van-der-beken-Tk0B3Dfkf_4-unsplash.jpg" alt="geometric shapes">
-              <p class="modal-grid-p">Geometric Shapes</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/luke-chesser-pJadQetzTkI-unsplash.jpg" alt="blue gradient background">
-              <p class="modal-grid-p">Gradients</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/juan-gomez-6AyyafVMJzQ-unsplash.jpg"
-                alt="rock formation coming out of water of a beach shore on an overcast day">
-              <p class="modal-grid-p">Seascapes</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/peter-gargiulo-cGNCepznaV8-unsplash.jpg" alt="black textured background">
-              <p class="modal-grid-p">Textures</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/nasa-Q1p7bh3SHj8-unsplash.jpg"
-                alt="view of earth at night with lights on surface">
-              <p class="modal-grid-p">Earth</p>
-            </div>
-            <div class="modal-grid-item">
-              <img class="modal-img" src="imgs/james-lee-YIy1cd3xN4w-unsplash.jpg" alt="black textured background">
-              <p class="modal-grid-p">Solid Colors</p>
-            </div>
-          </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <!-- <div class="modal-shortcuts-container">
-            <div class="modal-shortcuts-top">
-              <div class="my-shortcuts-container">
-                <div class="mini-google-container">
-                  <div class="user-svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="#5F6367"
-                      viewBox="0 0 49.75 49.75">
-                      <path
-                        d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 6c3.31 0 6 2.69 6 6 0 3.32-2.69 6-6 6s-6-2.68-6-6c0-3.31 2.69-6 6-6zm0 28.4c-5.01 0-9.41-2.56-12-6.44.05-3.97 8.01-6.16 12-6.16s11.94 2.19 12 6.16c-2.59 3.88-6.99 6.44-12 6.44z" />
-                      <path d="M0 0h48v48H0z" fill="none" /></svg>
-                  </div>
-                  <div class="shortcut-mini-google-page">
-                    <div id="mini-header">
-                      <p class="shortcut-mini-google-logo">Google</p>
-                      <hr class="shortcut-search-hr">
-                    </div>
-                    <div id="mini-shortcuts">
-                      <svg class="dot-img" xmlns="http://www.w3.org/2000/svg" width="116" height="42">
-                        <path
-                          d="M6.009 11.38a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.034 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zM6.008 41.114a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15z"
-                          fill="#9AA0A6" fill-rule="evenodd" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="checked-icon-container">
-                  </div>
-                </div>
-                <div class="bottom-text">
-                  <h4>My shortcuts</h4>
-                  <p>Shortcuts are curated by you</p>
-                </div>
-              </div>
-              <div class="most-visited-sites-container">
-                <div class="mini-google-container">
-                  <div class="earth-svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24.75 24.75">
-                      <path
-                        d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM4 12h4.4c3.407.022 4.922 1.73 4.543 5.127H9.488v2.47a8.004 8.004 0 0010.498-8.083C19.327 12.504 18.332 13 17 13c-2.137 0-3.206-.916-3.206-2.75h-3.748c-.274-2.728.683-4.092 2.87-4.092 0-.975.327-1.597.811-1.97A8.004 8.004 0 004 12z"
-                        fill="#5F6367" />
-                    </svg>
-                  </div>
-                  <div class="shortcut-mini-google-page">
-                    <div id="mini-header">
-                      <p class="shortcut-mini-google-logo">Google</p>
-                      <hr class="shortcut-search-hr">
-                    </div>
-                    <div id="mini-shortcuts">
-                      <svg class="dot-img" xmlns="http://www.w3.org/2000/svg" width="116" height="42">
-                        <path
-                          d="M6.009 11.38a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.034 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zM6.008 41.114a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm-26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm52.035 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15zm26.017 0a5.575 5.575 0 110-11.15 5.575 5.575 0 010 11.15z"
-                          fill="#9AA0A6" fill-rule="evenodd" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="bottom-text">
-                  <h4>Most visited sites</h4>
-                  <p>Shortcuts are suggested based on websites you visit often</p>
-                </div>
-              </div>
-            </div>
-            <div class="hide-toggle-section">
-              <div class="slashed-eye-icon-container">
-                <i class="fas fa-solid fa-eye-slash"></i>
-              </div>
-              <div class="hide-text-container">
-                <h4>Hide shortcuts</h4>
-                <p>Don't show shortcuts on this page</p>
-              </div>
-              <div class="hide-toggle-container">
-                <label id="hide-toggle-switch" class="switch-light switch-material" onclick="">
-                  <input type="checkbox">
-                  <span id="hide-toggle-switch-span">
-                    <span class="off"></span>
-                    <span class="on"></span>
-                    <a id="hide-toggle-switch-knob"></a>
-                  </span>
-                </label>
-              </div>
-            </div>
-          </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <!-- <div id="modal-cards-section">
-            <div class="modal-cards-radios">
-              <div class="modal-cards-radio-container">
-                <input id="modal-cards-radio-one" type="radio">
-                <label class="cards-radio-label" for="modal-cards-radio-one">Hide all cards</label>
-              </div>
-              <div class="modal-cards-radio-container">
-                <input id="modal-cards-radio-two" type="radio">
-                <label class="cards-radio-label" for="modal-cards-radio-two">Customize cards</label>
-              </div>
-            </div>
-            <div class="modal-cards-toggles">
-              <div id="cards-top-toggle-container" class="cards-toggle-container">
-                <p class="cards-toggle-p">Recipe Ideas</p>
-                <div class="card-toggle">
-                  <label id="hide-toggle-switch" class="switch-light switch-material" onclick="">
-                    <input type="checkbox">
-                    <span id="hide-toggle-switch-span">
-                      <span class="off"></span>
-                      <span class="on"></span>
-                      <a id="hide-toggle-switch-knob"></a>
-                    </span>
-                  </label>
-                </div>
-              </div>
-              <div id="cards-middle-toggle-container" class="cards-toggle-container">
-                <p class="cards-toggle-p">Your carts</p>
-                <div class="card-toggle">
-                  <label id="hide-toggle-switch" class="switch-light switch-material" onclick="">
-                    <input type="checkbox">
-                    <span id="hide-toggle-switch-span">
-                      <span class="off"></span>
-                      <span class="on"></span>
-                      <a id="hide-toggle-switch-knob"></a>
-                    </span>
-                  </label>
-                </div>
-              </div>
-              <div id="cards-bottom-toggle-container" class="cards-toggle-container">
-                <p class="cards-toggle-p">Get discounts</p>
-                <div class="card-toggle">
-                  <label id="hide-toggle-switch" class="switch-light switch-material" onclick="">
-                    <input type="checkbox">
-                    <span id="hide-toggle-switch-span">
-                      <span class="off"></span>
-                      <span class="on"></span>
-                      <a id="hide-toggle-switch-knob"></a>
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <!-- <div id="color-theme-section">
-            <div class="color-selection custom-color-border">
-              <div class="white color-half"></div>
-              <div class="custom-color color-half"></div>
-              <svg id="pencil-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28">
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path
-                  d="M17.66 5.41l.92.92-2.69 2.69-.92-.92 2.69-2.69M17.67 3c-.26 0-.51.1-.71.29l-3.12 3.12-1.93-1.91-1.41 1.41 1.42 1.42L3 16.25V21h4.75l8.92-8.92 1.42 1.42 1.41-1.41-1.92-1.92 3.12-3.12c.4-.4.4-1.03.01-1.42l-2.34-2.34c-.2-.19-.45-.29-.7-.29zM6.92 19L5 17.08l8.06-8.06 1.92 1.92L6.92 19z" />
-              </svg>
-            </div>
-            <div class="color-selection default-color-border">
-              <div class="default-color-light color-half"></div>
-              <div class="default-color color-half"></div>
-            </div>
-            <div class="color-selection warm-grey-border">
-              <div class="white color-half"></div>
-              <div class="warm-grey color-half"></div>
-            </div>
-            <div class="color-selection cool-grey-border">
-              <div class="cool-grey-light color-half"></div>
-              <div class="cool-grey color-half"></div>
-            </div>
-            <div class="color-selection midnight-blue-border">
-              <div class="midnight-blue-light color-half"></div>
-              <div class="midnight-blue color-half"></div>
-            </div>
-            <div class="color-selection black-border">
-              <div class="black-light color-half"></div>
-              <div class="black color-half"></div>
-            </div>
-            <div class="color-selection beige-white-border">
-              <div class="white color-half"></div>
-              <div class="beige-white color-half"></div>
-            </div>
-            <div class="color-selection yellow-white-border">
-              <div class="white color-half"></div>
-              <div class="yellow-white color-half"></div>
-            </div>
-            <div class="color-selection green-white-border">
-              <div class="white color-half"></div>
-              <div class="green-white color-half"></div>
-            </div>
-            <div class="color-selection light-teal-white-border">
-              <div class="white color-half"></div>
-              <div class="light-teal-white color-half"></div>
-            </div>
-            <div class="color-selection light-purple-white-border">
-              <div class="white color-half"></div>
-              <div class="light-purple-white color-half"></div>
-            </div>
-            <div class="color-selection pink-white-border">
-              <div class="white color-half"></div>
-              <div class="pink-white color-half"></div>
-            </div>
-            <div class="color-selection beige-border">
-              <div class="beige-light color-half"></div>
-              <div class="beige color-half"></div>
-            </div>
-            <div class="color-selection orange-border">
-              <div class="orange-light color-half"></div>
-              <div class="orange color-half"></div>
-            </div>
-            <div class="color-selection light-green-border">
-              <div class="light-green-light color-half"></div>
-              <div class="light-green color-half"></div>
-            </div>
-            <div class="color-selection light-teal-border">
-              <div class="light-teal-light color-half"></div>
-              <div class="light-teal color-half"></div>
-            </div>
-            <div class="color-selection light-blue-border">
-              <div class="light-blue-light color-half"></div>
-              <div class="light-blue color-half"></div>
-            </div>
-            <div class="color-selection pink-border">
-              <div class="pink-light color-half"></div>
-              <div class="pink color-half"></div>
-            </div>
-            <div class="color-selection dark-pink-red-border">
-              <div class="dark-pink-red-light color-half"></div>
-              <div class="dark-pink-red color-half"></div>
-            </div>
-            <div class="color-selection dark-red-orange-border">
-              <div class="dark-red-orange-light color-half"></div>
-              <div class="dark-red-orange color-half"></div>
-            </div>
-            <div class="color-selection dark-green-border">
-              <div class="dark-green-light color-half"></div>
-              <div class="dark-green color-half"></div>
-            </div>
-            <div class="color-selection dark-teal-border">
-              <div class="dark-teal-light color-half"></div>
-              <div class="dark-teal color-half"></div>
-            </div>
-            <div class="color-selection dark-blue-border">
-              <div class="dark-blue-light color-half"></div>
-              <div class="dark-blue color-half"></div>
-            </div>
-            <div class="color-selection dark-purple-border">
-              <div class="dark-purple-light color-half"></div>
-              <div class="dark-purple color-half"></div>
-            </div>
-          </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-        <div class="bottom-scroll-border show-2"></div>
-
-        <div class="modal-buttons-container">
-          <button class="modal-cancel modal-buttons">Cancel</button>
-          <button class="modal-done modal-buttons">Done</button>
+          <div class="bottom-scroll-border show-2"></div>
+
+          <div class="modal-buttons-container">
+            <button class="modal-cancel modal-buttons">Cancel</button>
+            <button class="modal-done modal-buttons">Done</button>
+          </div>
         </div>
       </div>
-
-
     </div>
-  </div>
 
-
-  <!-- ------------ JAVASCRIPT MAIN ------------ -->
-  <script src="js/app.js"></script>
-</body>
-
+    <!-- ------------ JAVASCRIPT MAIN ------------ -->
+    <script src="js/app.js"></script>
+  </body>
 </html>
