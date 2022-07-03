@@ -27,7 +27,7 @@ search.addEventListener("click", () => {
 /* ----------------- TOGGLE MODAL CENTER CONTAINER TOP BORDER ----------------- */
 
 modalGrid.onscroll = function () {
-  myFunction()
+  myFunction();
 };
 
 function myFunction() {
@@ -36,7 +36,7 @@ function myFunction() {
   } else {
     topScrollBorder.className = "top-scroll-border";
   }
-};
+}
 
 
 
