@@ -1023,6 +1023,11 @@ a {
     margin: 0 0 0 1.5rem;
   }
 
+  .cards-middle-toggle-bottom-border {
+    border-bottom: 1px solid #5f6367;
+    border-radius: 0 0 5px 5px;
+  }
+
   /* ----------------- COLOR THEME SECTION ------------------ */
 
   #color-theme-section {

@@ -34,6 +34,16 @@ const shortcutsP = document.querySelector(".shortcuts-p");
 const eyeSlash = document.querySelector(".fa-eye-slash");
 const hideTopWebsites = document.getElementById("hide-top-websites");
 const modalCancel = document.querySelector(".modal-cancel");
+const hideCardsToggle = document.getElementById("modal-cards-radio-one");
+const customizeToggle = document.getElementById("modal-cards-radio-two");
+const recipeIdeasToggle = document.getElementById("recipe-ideas-toggle");
+const yourCartsToggle = document.getElementById("your-carts-toggle");
+const cardsBottomToggle = document.getElementById(
+  "cards-bottom-toggle-container"
+);
+const cardsMiddleToggleBottomBorder = document.getElementById(
+  "cards-middle-toggle-container"
+);
 
 /* ----------------- SEARCH DROPDOWN LIST ----------------- */
 
@@ -132,6 +142,8 @@ miniGoogleOne.addEventListener("click", () => {
   shortcutsH4.classList.remove("shortcuts-text-active");
   shortcutsP.classList.remove("shortcuts-text-active");
   eyeSlash.classList.remove("eye-slash-active");
+  hideShortcutsToggle.checked = false;
+  hideTopWebsites.classList.remove("hide");
 });
 
 /* ----------------- ADD AND REMOVE ACTIVE STYLING FOR MODAL SHORTCUTS MINI GOOGLE CONTAINER TWO ----------------- */
@@ -151,6 +163,8 @@ miniGoogleTwo.addEventListener("click", () => {
   shortcutsH4.classList.remove("shortcuts-text-active");
   shortcutsP.classList.remove("shortcuts-text-active");
   eyeSlash.classList.remove("eye-slash-active");
+  hideShortcutsToggle.checked = false;
+  hideTopWebsites.classList.remove("hide");
 });
 
 /* ----------------- HIDE/SHOW SHORTCUTS AND ADD ACTIVE STYLING TO CUSTOMIZE MODAL SHORTSCUTS HIDE SECTION ----------------- */
@@ -195,6 +209,30 @@ modalListItemThree.addEventListener("click", () => {
   modalListItemThree.classList.add("modal-list-item-active");
   modalColorTheme.classList.add("hide");
   modalListItemFour.classList.remove("modal-list-item-active");
+});
+
+// uncheck toggles, hide bottom toggle, and add middle toggle bottom border
+hideCardsToggle.addEventListener("click", () => {
+  recipeIdeasToggle.checked = false;
+  yourCartsToggle.checked = false;
+  recipeIdeasToggle.disabled = true;
+  yourCartsToggle.disabled = true;
+  cardsBottomToggle.classList.add("hide");
+  cardsMiddleToggleBottomBorder.classList.add(
+    "cards-middle-toggle-bottom-border"
+  );
+});
+
+// check toggles, show bottom toggle, and remove middle toggle bottom border
+customizeToggle.addEventListener("click", () => {
+  recipeIdeasToggle.checked = true;
+  yourCartsToggle.checked = true;
+  recipeIdeasToggle.disabled = false;
+  yourCartsToggle.disabled = false;
+  cardsBottomToggle.classList.remove("hide");
+  cardsMiddleToggleBottomBorder.classList.remove(
+    "cards-middle-toggle-bottom-border"
+  );
 });
 
 /* ----------------- SHOW COLOR THEMES AND ADD ACTIVE STYLING ----------------- */
