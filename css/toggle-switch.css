@@ -560,7 +560,7 @@
   }
 
   .switch-material.switch-light input:checked~span {
-    background: rgba(63, 81, 181, 0.5);
+    background: #8BB4F7;
   }
 
   /* switch-toggle
