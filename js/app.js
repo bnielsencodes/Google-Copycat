@@ -235,6 +235,27 @@ customizeToggle.addEventListener("click", () => {
   );
 });
 
+// hide/show .cards-bottom-toggle-container on yourCartsToggle click event
+yourCartsToggle.addEventListener("click", () => {
+  if (yourCartsToggle.checked === false) {
+    cardsBottomToggle.classList.add("hide");
+    cardsMiddleToggleBottomBorder.classList.add(
+      "cards-middle-toggle-bottom-border"
+    );
+  } else {
+    cardsBottomToggle.classList.remove("hide");
+    cardsMiddleToggleBottomBorder.classList.remove(
+      "cards-middle-toggle-bottom-border"
+    );
+  }
+});
+
+
+
+
+
+
+
 /* ----------------- SHOW COLOR THEMES AND ADD ACTIVE STYLING ----------------- */
 
 modalListItemFour.addEventListener("click", () => {
