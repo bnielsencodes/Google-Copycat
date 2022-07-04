@@ -17,6 +17,8 @@ const miniGoogleOne = document.querySelector(".mini-google-container-one");
 const miniGoogleTwo = document.querySelector(".mini-google-container-two");
 const userSVG = document.querySelector(".user-svg");
 const earthSVG = document.querySelector(".earth-svg");
+const dotSVGOne = document.getElementById("dot-svg-one-active");
+const dotSVGTwo = document.getElementById("dot-svg-two-active");
 const miniGooglePageOne = document.querySelector(
   ".shortcut-mini-google-page-one"
 );
@@ -120,6 +122,8 @@ miniGoogleOne.addEventListener("click", () => {
   miniGoogleTwo.classList.remove("mini-google-container-active");
   userSVG.classList.add("svg-active");
   earthSVG.classList.remove("svg-active");
+  dotSVGOne.classList.add("svg-active");
+  dotSVGTwo.classList.remove("svg-active");
   miniGooglePageOne.classList.remove("not-active-border");
   miniGooglePagetwo.classList.add("not-active-border");
   checkedIconOne.classList.remove("hide");
@@ -137,6 +141,8 @@ miniGoogleTwo.addEventListener("click", () => {
   miniGoogleTwo.classList.add("mini-google-container-active");
   userSVG.classList.remove("svg-active");
   earthSVG.classList.add("svg-active");
+  dotSVGOne.classList.remove("svg-active");
+  dotSVGTwo.classList.add("svg-active");
   miniGooglePageOne.classList.add("not-active-border");
   miniGooglePagetwo.classList.remove("not-active-border");
   checkedIconOne.classList.add("hide");
@@ -158,8 +164,24 @@ hideShortcutsToggle.addEventListener("click", () => {
   eyeSlash.classList.toggle("eye-slash-active");
   miniGoogleOne.classList.toggle("mini-google-container-active");
   userSVG.classList.toggle("svg-active");
+  dotSVGOne.classList.toggle("svg-active");
   miniGooglePageOne.classList.toggle("not-active-border");
   checkedIconOne.classList.toggle("hide");
+  // change styling when .hideShortCutsToggle has attribute checked
+  if (hideShortcutsToggle.hasAttribute("checked")) {
+    miniGoogleOne.classList.remove("mini-google-container-active");
+    miniGoogleTwo.classList.remove("mini-google-container-active");
+    userSVG.classList.remove("svg-active");
+    earthSVG.classList.remove("svg-active");
+    dotSVGOne.classList.remove("svg-active");
+    dotSVGTwo.classList.remove("svg-active");
+    miniGooglePageOne.classList.add("not-active-border");
+    miniGooglePageTwo.classList.add("not-active-border");
+    checkedIconOne.classList.add("hide");
+    checkedIconTwo.classList.add("hide");
+  } else {
+    checkedIconOne.classList.remove("hide");
+  }
 });
 
 /* ----------------- SHOW CARDS AND ADD ACTIVE STYLING ----------------- */
