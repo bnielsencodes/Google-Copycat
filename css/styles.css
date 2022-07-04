@@ -157,9 +157,9 @@ a {
 }
 
 .fa-clock {
-  background-color: #000;
+  background-color: #5F6367;
   color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #5F6367;
   border-radius: 50%;
   font-size: 0.75rem;
   margin-right: 14px;
@@ -167,7 +167,7 @@ a {
 
 .search-span {
   font-size: 1rem;
-  color: #757575;
+  color: #5F6367;
   padding-left: 4px;
 }
 

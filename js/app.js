@@ -44,15 +44,25 @@ const cardsBottomToggle = document.getElementById(
 const cardsMiddleToggleBottomBorder = document.getElementById(
   "cards-middle-toggle-container"
 );
+const body = document.getElementById("body");
 
-/* ----------------- SEARCH DROPDOWN LIST ----------------- */
+/* ----------------- SHOW SEARCH DROPDOWN LIST ----------------- */
 
 search.addEventListener("click", () => {
-  dropdown.classList.toggle("show");
-  searchBar.classList.toggle("search-border-radius");
-  dropdownHide.classList.toggle("hidden");
-  search.classList.toggle("search-padding-top");
+  dropdown.classList.add("show");
+  searchBar.classList.add("search-border-radius");
+  dropdownHide.classList.add("hidden");
+  search.classList.add("search-padding-top");
 });
+
+/* ----------------- HIDE SEARCH DROPDOWN LIST ON MOUSEUP EVENT ANYWHERE OTHER THAN DROPDOWN ----------------- */
+
+body.addEventListener("mouseup", () => {
+  dropdown.classList.remove("show");
+  searchBar.classList.remove("search-border-radius");
+  dropdownHide.classList.remove("hidden");
+  search.classList.remove("search-padding-top");
+})
 
 /* ----------------- MODAL HIDE/SHOW ----------------- */
 
@@ -249,12 +259,6 @@ yourCartsToggle.addEventListener("click", () => {
     );
   }
 });
-
-
-
-
-
-
 
 /* ----------------- SHOW COLOR THEMES AND ADD ACTIVE STYLING ----------------- */
 
